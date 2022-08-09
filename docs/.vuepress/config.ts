@@ -15,7 +15,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Jim's blog",
+      title: "ZhengWenFeng's blog",
       description: '技术博客，专注于后端学习与总结，python,go,redis,k8s,mysql,kafka,flask,django,tornado,git,github,markdown等技术类文章',
     }
   },
@@ -39,6 +39,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 link: '/pages/b71dc2/'
               }
             ]
+          }
+        ]
+      },
+      {
+        text: '计算机技术',
+        link: '/computer/',
+        items: [
+          {
+            text: 'k8s',
+            link: '/k8s/'
           }
         ]
       },
@@ -118,7 +128,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 博主信息 (显示在首页侧边栏)
     blogger: {
       avatar: '/img/me.jpg',
-      name: 'Jim',
+      name: 'zhengwenfeng',
       slogan: '穷则变，变则通，通则久',
     },
 
@@ -148,13 +158,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2022, // 博客创建年份
       copyrightInfo:
-        'Jim | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        'zhengwenfeng | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'jim',
+        name: 'zhengwenfeng',
         link: 'https://github.com/tenqaz'
       }
     },
