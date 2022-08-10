@@ -3,9 +3,17 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+if [ -z "$GITHUB_TOKEN" ]; then
+    msg="deploy"
+    push_addr="git@github.com:tenqaz/tenqaz.github.io.git"
+else
+    # 自动部署
+    msg="auto deploy"
+    push_addr=`https://tenqaz:${GITHUB_TOKEN}@github.com/tenqaz/tenqaz.github.io.git`
+    git config --global user.name "zhengwenfeng"
+    git config --global user.email "326695231@qq.com"
+fi
 
-push_addr=`git remote get-url --push origin` # git提交地址，也可以手动设置，比如：push_addr=git@github.com:xugaoyi/vuepress-theme-vdoing.git
-commit_info=`git describe --all --always --long`
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 push_branch=gh-pages # 推送的分支
 
@@ -17,7 +25,7 @@ cd $dist_path
 
 git init
 git add -A
-git commit -m "deploy, $commit_info"
+git commit -m "${msg}"
 git push -f $push_addr HEAD:$push_branch
 
 cd -

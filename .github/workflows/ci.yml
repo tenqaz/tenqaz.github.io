@@ -1,12 +1,11 @@
 name: CI
 
-#on: [push]
 
 # 在master分支发生push事件时触发。
-# on:
-#   push:
-#     branches:
-#       - master
+on:
+  push:
+    branches:
+      - main
 
 env: # 设置环境变量
   TZ: Asia/Shanghai # 时区（设置时区可使页面中的`最近更新时间`使用该时区时间）
@@ -26,12 +25,12 @@ jobs:
         uses: actions/setup-node@v1 # 作用：安装nodejs
         with:
           node-version: ${{ matrix.node-version }} # 版本
-      - name: 
-        
       - name: Build-and-deploy # 步骤3
-        run: ./deploy.sh
-      #   run: |
-      #     remote_addr=`git remote get-url --push origin`
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: npm install && npm run deploy
+        # run: |
+        #   remote_addr=`git remote get-url --push origin`
       #     commit_info=`git describe --all --always --long`
       #     user_name=`git log -1 --pretty=format:'%an'`
       #     user_email=`git log -1 --pretty=format:'%ae'`

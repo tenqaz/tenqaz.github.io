@@ -5,13 +5,13 @@
   "author": {
     "name": "gaoyi(Evan) Xu"
   },
-  "homepage": "https://github.com/xugaoyi/vuepress-theme-vdoing#readme",
+  "homepage": "https://github.com/tenqaz/tenqaz.github.io#readme",
   "bugs": {
-    "url": "https://github.com/xugaoyi/vuepress-theme-vdoing/issues"
+    "url": "https://github.com/tenqaz/tenqaz.github.io/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xugaoyi/vuepress-theme-vdoing.git"
+    "url": "git+https://github.com/tenqaz/tenqaz.github.io.git"
   },
   "keywords": [
     "documentation",
