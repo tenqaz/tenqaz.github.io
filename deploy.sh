@@ -9,7 +9,7 @@ if [ -z "$GITHUB_TOKEN" ]; then
 else
     # 自动部署
     msg="auto deploy"
-    push_addr=`https://tenqaz:${GITHUB_TOKEN}@github.com/tenqaz/tenqaz.github.io.git`
+    push_addr="https://tenqaz:${GITHUB_TOKEN}@github.com/tenqaz/tenqaz.github.io.git"
     git config --global user.name "zhengwenfeng"
     git config --global user.email "326695231@qq.com"
 fi
