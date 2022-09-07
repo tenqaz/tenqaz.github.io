@@ -31,24 +31,52 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         link: '/python',
         items: [
           {
+            text: 'python基础',
+            link: '/pages/e31b06/'
+          },
+          {
             text: 'web框架',
-            link: '/pyweb',
+            link: '/py_web',
             items: [
+              {
+                text: 'django',
+                link: '/pages/853501/'
+              },
               {
                 text: 'flask',
                 link: '/pages/b71dc2/'
+              },
+              {
+                text: 'tornado',
+                link: '/pages/4c38f5/'
               }
             ]
-          }
+          },
+          {
+            text: '其他',
+            link: '/pages/f9d78c/'
+          },
         ]
       },
       {
+        text: 'go之路',
+        link: '/pages/87014e/'
+      },
+      {
         text: '计算机技术',
-        link: '/computer/',
+        link: '/computer',
         items: [
           {
             text: 'k8s',
-            link: '/pages/'
+            link: '/pages/f3cf17/'
+          },
+          {
+            text: '组件',
+            link: '/pages/aba491/'
+          },
+          {
+            text: '其他',
+            link: '/pages/19cfb6/'
           }
         ]
       },
