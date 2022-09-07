@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: Jim's blog
+heroText: ZhengWenFeng's blog
 tagline: 我的个人博客，记录技术与生活。
 # actionText: 立刻进入 →
 # actionLink: /web/
