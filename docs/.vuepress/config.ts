@@ -80,6 +80,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           }
         ]
       },
+      { text: '读书破万卷', link: '/pages/8bdb8d/' },
       { text: '关于', link: '/about/' },
       {
         text: '收藏',
