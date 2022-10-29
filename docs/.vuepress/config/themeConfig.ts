@@ -174,10 +174,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
         name: 'zhengwenfeng',
         link: 'https://github.com/tenqaz'
       },
-      description: '',
-      feed: {
-        enable: true
-      }
+      description: ''
     },
 
     // 自定义hmtl(广告)模块

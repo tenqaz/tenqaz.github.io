@@ -6,8 +6,7 @@ import dayjs from 'dayjs'
 
 // set your global feed options - override in page frontmatter `feed`
 const feed_options = {
-  canonical_base: 'https://www.zhengwenfeng.com',
-  count: 5000,
+  canonical_base: 'https://www.zhengwenfeng.com'
 };
 
 const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
