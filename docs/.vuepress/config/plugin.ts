@@ -120,11 +120,11 @@ const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
 
     // site
     [
-      'sitemap', 
-      {
-        hostname: 'https://www.zhengwenfeng.com'
-      }
-    ]
+      'sitemap', {
+        hostname: 'https://www.zhengwenfneg.com',
+        exclude: ["/404.html"],
+      },
+    ],
   ]
 
 export default plugins
