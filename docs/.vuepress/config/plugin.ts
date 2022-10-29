@@ -117,6 +117,14 @@ const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
     
     // rss
     [ 'feed', feed_options ],
+
+    // site
+    [
+      'sitemap', 
+      {
+        hostname: 'https://www.zhengwenfeng.com'
+      }
+    ]
   ]
 
 export default plugins
