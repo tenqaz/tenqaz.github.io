@@ -87,8 +87,8 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
     // docsBranch: 'master', // 编辑的文件所在分支，默认master。 注意：如果你的分支是main则修改为main
-    editLinks: true, // 启用编辑
-    editLinkText: '编辑',
+    editLinks: false, // 启用编辑
+    // editLinkText: '编辑',
 
     //*** 以下是Vdoing主题相关配置，文档：https://doc.xugaoyi.com/pages/a20ce8/ ***//
 
@@ -155,9 +155,9 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
           link: 'https://github.com/tenqaz',
         },
         {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          iconClass: 'icon-rss',
+          title: 'RSS订阅',
+          link: 'https://www.zhengwenfeng.com/rss.xml',
         },
       ],
     },
@@ -174,7 +174,10 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
         name: 'zhengwenfeng',
         link: 'https://github.com/tenqaz'
       },
-      description: ''
+      description: '',
+      feed: {
+        enable: true
+      }
     },
 
     // 自定义hmtl(广告)模块
