@@ -20,7 +20,7 @@ const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
     ],
 
     // 全文搜索。 ⚠️注意：此插件会在打开网站时多加载部分js文件用于搜索，导致初次访问网站变慢。如在意初次访问速度的话可以不使用此插件！（推荐：vuepress-plugin-thirdparty-search）
-    // 'fulltext-search',
+    'fulltext-search',
 
     // 可以添加第三方搜索链接的搜索框（继承原官方搜索框的配置参数）
     [
@@ -131,6 +131,25 @@ const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
           name   : 'zhengwenfeng',
         },
         canonical_base: 'https://www.zhengwenfeng.com',
+      }
+    ],
+
+    // 文章阅读滚动条
+    // https://github.com/tolking/vuepress-plugin-reading-progress
+    'reading-progress',
+
+    [
+      'vuepress-plugin-vssue-global',
+      {
+        platform: "github",
+        title: '-[Comment]-<%- frontmatter.title %>',
+        needComments: true,
+        // 其他的 Vssue 配置
+        autoCreateIssue: true,
+        clientId: "5eaacfff6f9b823a4d50",
+        clientSecret: "32bb2fd7202f5084f04c3c5a3ca415f76a2fa912",
+        owner: "tenqaz",
+        repo: "tenqaz.github.io",
       }
     ]
   ]

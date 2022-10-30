@@ -30,6 +30,8 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "vuepress-plugin-sitemap": "^2.3.1"
+    "vuepress-plugin-reading-progress": "^1.0.10",
+    "vuepress-plugin-sitemap": "^2.3.1",
+    "vuepress-plugin-vssue-global": "^0.0.3"
   }
 }
