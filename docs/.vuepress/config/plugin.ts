@@ -1,7 +1,6 @@
 import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
 
 import { UserPlugins } from 'vuepress/config'
-import baiduCode from './baiduCode' // 百度统计hm码
 import dayjs from 'dayjs'
 
 // set your global feed options - override in page frontmatter `feed`
@@ -16,7 +15,7 @@ const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
     [
       'vuepress-plugin-baidu-tongji', // 百度统计
       {
-        hm: baiduCode,
+        hm: '7c28cc47ffa100de44e976f816b0b294',
       },
     ],
 
