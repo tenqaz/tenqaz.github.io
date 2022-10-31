@@ -30,7 +30,7 @@ const htmlModule: VdoingThemeConfig['htmlModules'] = {
       margin: 0 0 8px 0;
     ">公众号</p>
     <img src="https://open.weixin.qq.com/qr/code?username=gh_15e3ec18b681"  style="width:100%;" />
-    编程黑洞，扫码或者搜索关注~
+    编程黑洞，扫码或者搜索关注
     </p>
     </div>`,
   // `<!-- 纵向自适应 -->

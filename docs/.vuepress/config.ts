@@ -17,7 +17,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
   },
 
-  title: "ZhengWenFeng's blog",
+  title: "郑文峰的博客",
   description: '技术博客，专注于后端学习与总结，python,go,redis,k8s,mysql,kafka,flask,django,tornado,git,github,markdown等技术类文章',
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
 

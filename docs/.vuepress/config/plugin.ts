@@ -138,20 +138,20 @@ const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
     // https://github.com/tolking/vuepress-plugin-reading-progress
     'reading-progress',
 
-    [
-      'vuepress-plugin-vssue-global',
-      {
-        platform: "github",
-        title: '-[Comment]-<%- frontmatter.title %>',
-        needComments: true,
-        // 其他的 Vssue 配置
-        autoCreateIssue: true,
-        clientId: "5eaacfff6f9b823a4d50",
-        clientSecret: "32bb2fd7202f5084f04c3c5a3ca415f76a2fa912",
-        owner: "tenqaz",
-        repo: "tenqaz.github.io",
-      }
-    ]
+    // [
+    //   'vuepress-plugin-vssue-global',
+    //   {
+    //     platform: "github",
+    //     title: '-[Comment]-<%- frontmatter.title %>',
+    //     needComments: true,
+    //     // 其他的 Vssue 配置
+    //     autoCreateIssue: true,
+    //     clientId: "5eaacfff6f9b823a4d50",
+    //     clientSecret: "32bb2fd7202f5084f04c3c5a3ca415f76a2fa912",
+    //     owner: "tenqaz",
+    //     repo: "tenqaz.github.io",
+    //   }
+    // ]
   ]
 
 export default plugins
