@@ -46,12 +46,18 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
         link: '/computer',
         items: [
           {
-            text: 'k8s',
-            link: '/pages/f3cf17/'
-          },
-          {
             text: '组件',
-            link: '/pages/aba491/'
+            link: '/component',
+            items: [
+              {
+                text: 'k8s',
+                link: '/pages/f3cf17/'
+              },
+              {
+                text: 'redis',
+                link: '/pages/2bbeb3/'
+              }
+            ]
           },
           {
             text: '其他',
