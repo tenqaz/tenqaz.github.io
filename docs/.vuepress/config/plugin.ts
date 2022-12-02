@@ -27,11 +27,11 @@ const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
       'thirdparty-search',
       {
         thirdparty: [
-          {
-            title: '在MDN中搜索',
-            frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
-            behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
-          },
+          // {
+          //   title: '在MDN中搜索',
+          //   frontUrl: 'https://developer.mozilla.org/zh-CN/search?q=', // 搜索链接的前面部分
+          //   behindUrl: '', // 搜索链接的后面部分，可选，默认 ''
+          // },
           // {
           //   title: '在Runoob中搜索',
           //   frontUrl: 'https://www.runoob.com/?s=',
@@ -46,7 +46,11 @@ const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
           },
           {
             title: '通过百度搜索本站的',
-            frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
+            frontUrl: 'https://www.baidu.com/s?wd=site%3Azhengwenfeng.com%20',
+          },
+          {
+            title: '通过google搜索本站的',
+            frontUrl: 'https://www.google.com/search?q=site%3Azhengwenfeng.com%20',
           },
         ],
       }
