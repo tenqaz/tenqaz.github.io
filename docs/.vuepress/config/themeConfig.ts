@@ -56,6 +56,10 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
               {
                 text: 'redis',
                 link: '/pages/2bbeb3/'
+              },
+              {
+                text: 'mysql',
+                link: '/pages/2d69c7/'
               }
             ]
           },
