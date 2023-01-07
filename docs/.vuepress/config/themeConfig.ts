@@ -6,7 +6,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '计算机技术',
+        text: '编程',
         link: '/computer/',
         items: [
           {
@@ -18,16 +18,16 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
             link: '/go/'
           },
           {
+            text: 'mysql',
+            link: '/mysql/'
+          },
+          {
             text: 'k8s',
             link: '/k8s/'
           },
           {
             text: 'redis',
             link: '/redis/'
-          },
-          {
-            text: 'mysql',
-            link: '/mysql/'
           },
           {
             text: '其他',
