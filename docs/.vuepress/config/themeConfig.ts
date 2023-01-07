@@ -6,62 +6,28 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
     nav: [
       { text: '首页', link: '/' },
       {
-        text: 'python之路',
-        link: '/python',
-        items: [
-          {
-            text: 'python基础',
-            link: '/pages/e31b06/'
-          },
-          {
-            text: 'web框架',
-            link: '/py_web',
-            items: [
-              {
-                text: 'django',
-                link: '/pages/853501/'
-              },
-              {
-                text: 'flask',
-                link: '/pages/b71dc2/'
-              },
-              {
-                text: 'tornado',
-                link: '/pages/4c38f5/'
-              }
-            ]
-          },
-          {
-            text: '其他',
-            link: '/pages/f9d78c/'
-          },
-        ]
-      },
-      {
-        text: 'go之路',
-        link: '/pages/87014e/'
-      },
-      {
         text: '计算机技术',
-        link: '/computer',
+        link: '/computer/',
         items: [
           {
-            text: '组件',
-            link: '/component',
-            items: [
-              {
-                text: 'k8s',
-                link: '/pages/f3cf17/'
-              },
-              {
-                text: 'redis',
-                link: '/pages/2bbeb3/'
-              },
-              {
-                text: 'mysql',
-                link: '/pages/2d69c7/'
-              }
-            ]
+            text: 'python之路',
+            link: '/python/'
+          },
+          {
+            text: 'go之路',
+            link: '/go/'
+          },
+          {
+            text: 'k8s',
+            link: '/k8s/'
+          },
+          {
+            text: 'redis',
+            link: '/redis/'
+          },
+          {
+            text: 'mysql',
+            link: '/mysql/'
           },
           {
             text: '其他',
@@ -69,7 +35,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
           }
         ]
       },
-      { text: '读书破万卷', link: '/pages/8bdb8d/' },
+      { text: '读书破万卷', link: '/readbook/' },
       { text: '关于', link: '/about/' },
       {
         text: '更多',
