@@ -7,7 +7,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
       { text: '首页', link: '/' },
       {
         text: '编程',
-        link: '/computer/',
+        link: '/code/',
         items: [
           {
             text: 'python之路',
@@ -18,21 +18,25 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
             link: '/go/'
           },
           {
-            text: 'mysql',
-            link: '/mysql/'
-          },
-          {
-            text: 'k8s',
-            link: '/k8s/'
-          },
-          {
-            text: 'redis',
-            link: '/redis/'
-          },
-          {
             text: '其他',
             link: '/pages/19cfb6/'
           }
+        ]
+      },
+      {
+        text: '数据库',
+        link: '/database/',
+        items: [
+          {text: 'redis', link: '/redis/'},
+          {text: 'mysql', link: '/mysql/'}
+        ]
+      },
+      {
+        text: '云原生',
+        link: '/CloudNative/',
+        items: [
+          {text: 'docker', link: '/docker/'},
+          {text: 'k8s', link: '/k8s/'}
         ]
       },
       { text: '读书破万卷', link: '/readbook/' },
