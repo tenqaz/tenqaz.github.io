@@ -9,6 +9,15 @@ const feed_options = {
 };
 
 const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
+    [
+      'vuepress-plugin-comment-plus',
+      {
+        choosen: 'waline',
+        options: {
+          serverURL: 'https://waline-pi-five-45.vercel.app/',
+        }
+      }
+    ],
 
     'vuepress-plugin-baidu-autopush', // 百度自动推送
 
