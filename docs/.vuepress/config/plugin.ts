@@ -14,7 +14,7 @@ const plugins: VdoingThemeConfig['plugins'] = <UserPlugins>[
       {
         choosen: 'waline',
         options: {
-          serverURL: 'https://waline-pi-five-45.vercel.app/',
+          serverURL: 'https://comment.zhengwenfeng.com/',
         }
       }
     ],
