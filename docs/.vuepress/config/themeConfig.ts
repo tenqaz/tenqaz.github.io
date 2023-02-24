@@ -42,24 +42,35 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
       { text: '读书破万卷', link: '/readbook/' },
       { text: '周刊', link: '/studyWeekly/' },
       { text: '关于', link: '/about/' },
+      { text: '我的工具', 
+        items: [
+          { text: '导航', link: 'https://nav.zhengwenfeng.com/'}
+        ]
+      },
       {
         text: '更多',
         link: '/more/',
         items: [
           { text: '收藏', link: '/pages/beb6c0bd8a66cea6/' },
           { text: '友链', link: '/friends/' },
+          { text: '外部页面', 
+            items: [
+              { text: '开往', link: 'https://www.travellings.cn/go.html' },
+            ]
+          },
+          {
+            text: '索引',
+            link: '/archives/',
+            items: [
+              { text: '分类', link: '/categories/' },
+              { text: '标签', link: '/tags/' },
+              { text: '归档', link: '/archives/' },
+            ],
+          },
         ],
       },
-      {
-        text: '索引',
-        link: '/archives/',
-        items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
-        ],
-      },
-      { text: '开往', link: 'https://www.travellings.cn/go.html' }
+      
+      
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/me.jpg', // 导航栏logo
