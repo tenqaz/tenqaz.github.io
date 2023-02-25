@@ -44,7 +44,8 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
       { text: '关于', link: '/about/' },
       { text: '我的工具', 
         items: [
-          { text: '导航', link: 'https://nav.zhengwenfeng.com/'}
+          { text: '导航', link: 'https://nav.zhengwenfeng.com/'},
+          { text: '代码片段', link: 'https://ref.zhengwenfeng.com/'}
         ]
       },
       {
