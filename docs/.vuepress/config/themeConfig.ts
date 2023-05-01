@@ -32,6 +32,13 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
         ]
       },
       {
+        text: '中间件',
+        link: '/middleware/',
+        items: [
+          {text: 'kafka', link: '/kafka/'}
+        ]
+      },
+      {
         text: '云原生',
         link: '/CloudNative/',
         items: [
