@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06.周刊/04.学习周刊-第04期-第19周.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "06.周刊/04.学习周刊-第04期-第19周.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "06.周刊/04.学习周刊-第04期-第19周.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06.周刊/04.学习周刊-第04期-第19周.md"
+                "file": "index.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "4f1774f4c2f2a1fe",
   "lastOpenFiles": [
+    "06.周刊/04.学习周刊-第04期-第19周.md",
     "06.周刊/01.学习周刊-第01期-第07周.md",
     "06.周刊/04.学习周刊-第4期-第19周.md",
     "未命名.md",

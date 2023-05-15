@@ -18,6 +18,10 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
             link: '/go/'
           },
           {
+            text: 'linux',
+            link: '/linux/'
+          },
+          {
             text: '其他',
             link: '/pages/19cfb6/'
           }
