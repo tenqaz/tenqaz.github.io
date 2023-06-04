@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "9177a198f37be962",
+        "id": "5b56a73bf8ba49c8",
         "type": "tabs",
         "children": [
           {
-            "id": "4f1774f4c2f2a1fe",
+            "id": "54c8e051a1f1c18f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "01.云原生/07.k8s/14.理解flannel的三种容器网络方案原理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4071f2c82ebca37a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01.云原生/07.k8s/15.理解calico容器网络通信方案.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "48e19d8d4cef045c",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "01.云原生/07.k8s/15.理解calico容器网络通信方案.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "01.云原生/07.k8s/15.理解calico容器网络通信方案.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +139,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "01.云原生/07.k8s/15.理解calico容器网络通信方案.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,14 +160,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4f1774f4c2f2a1fe",
+  "active": "4071f2c82ebca37a",
   "lastOpenFiles": [
+    "01.云原生/07.k8s/14.理解flannel的三种容器网络方案原理.md",
+    "01.云原生/07.k8s/15.理解calico容器网络通信方案.md",
+    "Pasted image 20230603113634.png",
+    "().md",
+    "index.md",
     "06.周刊/04.学习周刊-第04期-第19周.md",
     "06.周刊/01.学习周刊-第01期-第07周.md",
     "06.周刊/04.学习周刊-第4期-第19周.md",
     "未命名.md",
     "06.周刊/03.学习周刊-第03期-第09周.md",
-    "index.md",
     "06.周刊/2023/学习周刊-第x期-第19周1.md",
     "Untitled 4.md",
     "06.周刊/2023/学习周刊-第x期-第19周.md",
