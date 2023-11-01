@@ -28,18 +28,12 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
         ]
       },
       {
-        text: '数据库',
-        link: '/database/',
-        items: [
-          {text: 'redis', link: '/redis/'},
-          {text: 'mysql', link: '/mysql/'}
-        ]
-      },
-      {
         text: '中间件',
         link: '/middleware/',
         items: [
-          {text: 'kafka', link: '/kafka/'}
+          {text: 'kafka', link: '/kafka/'},
+          {text: 'mysql', link: '/mysql/'},
+          {text: 'redis', link: '/redis/'},
         ]
       },
       {
