@@ -45,7 +45,6 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
         ]
       },
       { text: '读书破万卷', link: '/readbook/' },
-      { text: '周刊', link: '/studyWeekly/' },
       { text: '关于', link: '/about/' },
       { text: '我的工具', 
         items: [
