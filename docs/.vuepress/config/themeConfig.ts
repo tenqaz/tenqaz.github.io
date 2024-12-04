@@ -34,6 +34,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
           {text: 'kafka', link: '/kafka/'},
           {text: 'mysql', link: '/mysql/'},
           {text: 'redis', link: '/redis/'},
+          {text: 'logstash', link: '/logstash/'},
         ]
       },
       {
