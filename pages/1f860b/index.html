@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>k8s之Service | 郑文峰的博客</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/img/favicon.ico">
+    <script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7c28cc47ffa100de44e976f816b0b294";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();</script>
+    <link rel="alternate" type="application/rss+xml" href="https://www.zhengwenfeng.com/rss.xml" title="郑文峰的博客 RSS Feed">
+    <link rel="alternate" type="application/atom+xml" href="https://www.zhengwenfeng.com/feed.atom" title="郑文峰的博客 Atom Feed">
+    <link rel="alternate" type="application/json" href="https://www.zhengwenfeng.com/feed.json" title="郑文峰的博客 JSON Feed">
+    <meta name="description" content="介绍k8s中的service资源对象，及其使用方法和案例">
+    <meta name="image" content="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220808185926.png">
+    <meta name="twitter:title" content="k8s之Service">
+    <meta name="twitter:description" content="介绍k8s中的service资源对象，及其使用方法和案例">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220808185926.png">
+    <meta name="twitter:url" content="https://www.zhengwenfeng.com/01.%E4%BA%91%E5%8E%9F%E7%94%9F/07.k8s/05.k8s%E4%B9%8Bservice.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="k8s之Service">
+    <meta property="og:description" content="介绍k8s中的service资源对象，及其使用方法和案例">
+    <meta property="og:image" content="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220808185926.png">
+    <meta property="og:url" content="https://www.zhengwenfeng.com/01.%E4%BA%91%E5%8E%9F%E7%94%9F/07.k8s/05.k8s%E4%B9%8Bservice.html">
+    <meta property="og:site_name" content="zhengwenfeng">
+    <meta property="article:published_time" content="2022-08-30T16:59:37.000Z">
+    <meta property="article:tag" content="k8s">
+    <meta itemprop="name" content="k8s之Service">
+    <meta itemprop="description" content="介绍k8s中的service资源对象，及其使用方法和案例">
+    <meta itemprop="image" content="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220808185926.png">
+    <meta name="keywords" content="后端博客,个人技术博客,后端,后端开发,后端框架,后端面试题,技术文档,学习,面试,python,go,redis,k8s,mysql,kafka,flask,django,tornado,git,github,markdown">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="preload" href="/assets/css/0.styles.7d7c9f67.css" as="style"><link rel="preload" href="/assets/js/app.4e415190.js" as="script"><link rel="preload" href="/assets/js/2.24a7111f.js" as="script"><link rel="preload" href="/assets/js/12.f3519955.js" as="script"><link rel="prefetch" href="/assets/js/10.0ff858da.js"><link rel="prefetch" href="/assets/js/11.b8cf75e6.js"><link rel="prefetch" href="/assets/js/13.ba9d2a28.js"><link rel="prefetch" href="/assets/js/14.1520fc04.js"><link rel="prefetch" href="/assets/js/15.e46d8df5.js"><link rel="prefetch" href="/assets/js/16.301607ba.js"><link rel="prefetch" href="/assets/js/17.5edd5a98.js"><link rel="prefetch" href="/assets/js/18.2177e635.js"><link rel="prefetch" href="/assets/js/19.2384634b.js"><link rel="prefetch" href="/assets/js/20.bd187917.js"><link rel="prefetch" href="/assets/js/21.d0be8113.js"><link rel="prefetch" href="/assets/js/22.3a4955a8.js"><link rel="prefetch" href="/assets/js/23.a3bcb456.js"><link rel="prefetch" href="/assets/js/24.71862498.js"><link rel="prefetch" href="/assets/js/25.2e172acd.js"><link rel="prefetch" href="/assets/js/26.6923f01c.js"><link rel="prefetch" href="/assets/js/27.09c7b98e.js"><link rel="prefetch" href="/assets/js/28.bec10ba5.js"><link rel="prefetch" href="/assets/js/29.66fbfdfe.js"><link rel="prefetch" href="/assets/js/3.3795ca5b.js"><link rel="prefetch" href="/assets/js/30.9c0f1fe5.js"><link rel="prefetch" href="/assets/js/31.d752b66c.js"><link rel="prefetch" href="/assets/js/32.4470dcef.js"><link rel="prefetch" href="/assets/js/33.f651e90c.js"><link rel="prefetch" href="/assets/js/34.1f05af5f.js"><link rel="prefetch" href="/assets/js/35.717889b1.js"><link rel="prefetch" href="/assets/js/36.390cc636.js"><link rel="prefetch" href="/assets/js/37.ea30bf1c.js"><link rel="prefetch" href="/assets/js/38.9913de0e.js"><link rel="prefetch" href="/assets/js/39.3eff4508.js"><link rel="prefetch" href="/assets/js/4.6f9d7642.js"><link rel="prefetch" href="/assets/js/40.60189bbf.js"><link rel="prefetch" href="/assets/js/41.4c71c805.js"><link rel="prefetch" href="/assets/js/42.60a37969.js"><link rel="prefetch" href="/assets/js/43.2135761d.js"><link rel="prefetch" href="/assets/js/44.8115e866.js"><link rel="prefetch" href="/assets/js/45.08076719.js"><link rel="prefetch" href="/assets/js/46.fe5f9d01.js"><link rel="prefetch" href="/assets/js/47.24983e3f.js"><link rel="prefetch" href="/assets/js/48.0ed83593.js"><link rel="prefetch" href="/assets/js/49.2a880ddc.js"><link rel="prefetch" href="/assets/js/5.28f59fe3.js"><link rel="prefetch" href="/assets/js/50.befff681.js"><link rel="prefetch" href="/assets/js/51.409d7264.js"><link rel="prefetch" href="/assets/js/52.fd6ebc00.js"><link rel="prefetch" href="/assets/js/53.2a64f6b3.js"><link rel="prefetch" href="/assets/js/54.bc765a40.js"><link rel="prefetch" href="/assets/js/55.ff1ab130.js"><link rel="prefetch" href="/assets/js/56.75425d11.js"><link rel="prefetch" href="/assets/js/57.fcc1774a.js"><link rel="prefetch" href="/assets/js/58.fe6e0013.js"><link rel="prefetch" href="/assets/js/59.99286354.js"><link rel="prefetch" href="/assets/js/6.3be95f25.js"><link rel="prefetch" href="/assets/js/60.8b51339f.js"><link rel="prefetch" href="/assets/js/61.7aa1513f.js"><link rel="prefetch" href="/assets/js/62.44a5c46b.js"><link rel="prefetch" href="/assets/js/63.c08fded8.js"><link rel="prefetch" href="/assets/js/64.d67a7641.js"><link rel="prefetch" href="/assets/js/65.c38acde8.js"><link rel="prefetch" href="/assets/js/66.94ecb80a.js"><link rel="prefetch" href="/assets/js/67.993ecc0d.js"><link rel="prefetch" href="/assets/js/68.5c4dacef.js"><link rel="prefetch" href="/assets/js/69.1edd7c6e.js"><link rel="prefetch" href="/assets/js/7.89ae0b65.js"><link rel="prefetch" href="/assets/js/70.13076e86.js"><link rel="prefetch" href="/assets/js/71.4e384690.js"><link rel="prefetch" href="/assets/js/72.de9c21cf.js"><link rel="prefetch" href="/assets/js/73.309cec1a.js"><link rel="prefetch" href="/assets/js/74.cd4b95b9.js"><link rel="prefetch" href="/assets/js/75.86cb35bd.js"><link rel="prefetch" href="/assets/js/76.01e672b1.js"><link rel="prefetch" href="/assets/js/77.87ff39c2.js"><link rel="prefetch" href="/assets/js/78.63d51f4b.js"><link rel="prefetch" href="/assets/js/79.bf687efb.js"><link rel="prefetch" href="/assets/js/8.476bcca6.js"><link rel="prefetch" href="/assets/js/80.ab7ea48f.js"><link rel="prefetch" href="/assets/js/81.bf32e3ea.js"><link rel="prefetch" href="/assets/js/82.853bd4e4.js"><link rel="prefetch" href="/assets/js/83.594a975b.js"><link rel="prefetch" href="/assets/js/84.f0257e5d.js"><link rel="prefetch" href="/assets/js/85.beb2a018.js"><link rel="prefetch" href="/assets/js/86.f7c48743.js"><link rel="prefetch" href="/assets/js/87.48bbaf6e.js"><link rel="prefetch" href="/assets/js/88.cce1f61b.js"><link rel="prefetch" href="/assets/js/89.4ca7cf23.js"><link rel="prefetch" href="/assets/js/9.c0fee454.js"><link rel="prefetch" href="/assets/js/90.4008e0ce.js"><link rel="prefetch" href="/assets/js/91.481c2a00.js"><link rel="prefetch" href="/assets/js/92.13e0d982.js"><link rel="prefetch" href="/assets/js/93.3c61e96d.js"><link rel="prefetch" href="/assets/js/94.27df1548.js"><link rel="prefetch" href="/assets/js/95.91cfe261.js"><link rel="prefetch" href="/assets/js/96.d9e29378.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7d7c9f67.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open no-sidebar have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/me.jpg" alt="郑文峰的博客" class="logo"> <span class="site-name can-hide">郑文峰的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/archives/" class="nav-link">归档</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的工具" class="dropdown-title"><!----> <span class="title" style="display:;">我的工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://nav.zhengwenfeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://ref.zhengwenfeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  代码片段
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></li><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友链</a></li><li class="dropdown-item"><h4>外部页面</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <a href="https://github.com/tenqaz/tenqaz.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/img/me.jpg"> <div class="blogger-info"><h3>zhengwenfeng</h3> <span>穷则变，变则通，通则久</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/categories/" class="nav-link">分类</a></div><div class="nav-item"><a href="/tags/" class="nav-link">标签</a></div><div class="nav-item"><a href="/archives/" class="nav-link">归档</a></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="我的工具" class="dropdown-title"><!----> <span class="title" style="display:;">我的工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://nav.zhengwenfeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  导航
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://ref.zhengwenfeng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  代码片段
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><a href="/more/" class="link-title">更多</a> <span class="title" style="display:none;">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></li><li class="dropdown-item"><!----> <a href="/friends/" class="nav-link">友链</a></li><li class="dropdown-item"><h4>外部页面</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  开往
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></li></ul></div></div> <a href="https://github.com/tenqaz/tenqaz.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <!----> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=%E4%BA%91%E5%8E%9F%E7%94%9F" title="分类" data-v-06225672>云原生</a></li><li data-v-06225672><a href="/categories/?category=k8s" title="分类" data-v-06225672>k8s</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://github.com/tenqaz" target="_blank" title="作者" class="beLink" data-v-06225672>zhengwenfeng</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-08-30</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">k8s之Service<!----></h1>  <div class="theme-vdoing-content content__default"><h2 id="什么是service"><a href="#什么是service" class="header-anchor">#</a> 什么是service？</h2> <p>将运行在一组 Pods 上的应用程序公开为网络服务的抽象方法。</p> <p><strong>为什么需要service?</strong></p> <ol><li><p>pod的数量、IP都是动态变化的，service可以给该集合的Pod一个固定的IP，无论pod的集合如何改变，都可以通过service的固定IP来访问到应用。</p></li> <li><p>可以给pod集合提供负载均衡的功能。</p></li></ol> <p><strong>Service类型</strong></p> <ul><li>LoadBalance，使用云提供商的负载均衡器向外部暴露服务。</li> <li>ExternalName，将服务映射到指定的域名，这个域名可以集群内部也可以是外部的。</li> <li>NodePort，提供的服务既可对外部服务通过NodeIp:NodePort访问，也可以对集群内部通过ClusterIp访问</li> <li>ClusterIP，service提供的访问IP仅在集群内部可达</li></ul> <h2 id="使用clusterip-service"><a href="#使用clusterip-service" class="header-anchor">#</a> 使用ClusterIP Service</h2> <p>我们定义service如下，其中selector是用来筛选需要代理的pod，targetPort是目标pod的端口，port是指该service的端口。</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">kind</span><span class="token punctuation">:</span> Service 
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1 
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span> 
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> demoapp<span class="token punctuation">-</span>svc 
+<span class="token key atrule">spec</span><span class="token punctuation">:</span> 
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span> 
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> demoapp 
+  <span class="token key atrule">ports</span><span class="token punctuation">:</span> 
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> http 
+    <span class="token key atrule">protocol</span><span class="token punctuation">:</span> TCP    
+    <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">80</span>
+    <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">80</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>使用上面定义的yaml创建service对象，并可以看到SELECTOR的值是app=demoapp，我们需要创建带有该标签的pod，才能够进行代理。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@k8s-worker1 zwf]# kubectl apply -f service.yaml -n zwf
+service/demoapp-svc created
+
+[root@k8s-worker1 zwf]# kubectl get svc -n zwf -o wide
+NAME          TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE   SELECTOR
+demoapp-svc   ClusterIP   10.0.0.74    &lt;none&gt;        80/TCP    18s   app=demoapp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>定义deployment，会创建带有app=demoapp的Pod</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> apps/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Deployment
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> demoapp
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> demo<span class="token punctuation">-</span>deploy
+
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">replicas</span><span class="token punctuation">:</span> <span class="token number">2</span>
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+    <span class="token key atrule">matchLabels</span><span class="token punctuation">:</span>
+      <span class="token key atrule">app</span><span class="token punctuation">:</span> demoapp
+
+  <span class="token key atrule">template</span><span class="token punctuation">:</span>
+    <span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+      <span class="token key atrule">labels</span><span class="token punctuation">:</span>
+        <span class="token key atrule">app</span><span class="token punctuation">:</span> demoapp
+    <span class="token key atrule">spec</span><span class="token punctuation">:</span>
+      <span class="token key atrule">containers</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token key atrule">image</span><span class="token punctuation">:</span> mirrors.sangfor.com/ikubernetes/demoapp<span class="token punctuation">:</span>v1.0
+        <span class="token key atrule">name</span><span class="token punctuation">:</span> demoapp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>创建Deployment对象，并且可以看到创建了2个Pod</p> <div class="language-shell line-numbers-mode"><pre class="language-shell"><code><span class="token punctuation">[</span>root@k8s-worker1 zwf<span class="token punctuation">]</span><span class="token comment"># kubectl apply -f deployments_service.yaml -n zwf</span>
+deployment.apps/demo-deploy created
+
+<span class="token punctuation">[</span>root@k8s-worker1 zwf<span class="token punctuation">]</span><span class="token comment"># kubectl get deploy -o wide -n zwf</span>
+NAME          READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES                                         SELECTOR
+demo-deploy   <span class="token number">2</span>/2     <span class="token number">2</span>            <span class="token number">2</span>           2m37s   demoapp      mirrors.sangfor.com/ikubernetes/demoapp:v1.0   <span class="token assign-left variable">app</span><span class="token operator">=</span>demoapp
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>查看pod的详情，可以看到Labels有一个<code>app=demoapp</code>的标签</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@k8s-worker1 zwf]# kubectl get pods -o wide -n zwf
+NAME                           READY   STATUS    RESTARTS   AGE   IP               NODE          NOMINATED NODE   READINESS GATES
+demo-deploy-6c6d588789-h9gmd   1/1     Running   0          32s   10.222.126.1     k8s-worker2   &lt;none&gt;           &lt;none&gt;
+demo-deploy-6c6d588789-nhzhl   1/1     Running   0          32s   10.222.194.104   k8s-worker1   &lt;none&gt;           &lt;none&gt;
+
+[root@k8s-worker1 zwf]# kubectl describe demo-deploy-6c6d588789-h9gmd -n zwf
+Name:         demo-deploy-6c6d588789-h9gmd
+Namespace:    zwf
+Priority:     0
+Node:         k8s-worker2/10.64.2.153
+Start Time:   Tue, 30 Aug 2022 19:23:22 +0800
+Labels:       app=demoapp
+              pod-template-hash=6c6d588789
+
+....
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>通过查看service的详情，我们可以看到<strong>Endpoints</strong>的值是上面创建的两个Pod的IP。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@k8s-worker1 zwf]# kubectl describe svc -n zwf
+Name:              demoapp-svc
+Namespace:         zwf
+Labels:            &lt;none&gt;
+Annotations:       &lt;none&gt;
+Selector:          app=demoapp
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.0.0.74
+IPs:               10.0.0.74
+Port:              http  80/TCP
+TargetPort:        80/TCP
+Endpoints:         10.222.126.1:80,10.222.194.104:80
+Session Affinity:  None
+Events:            &lt;none&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>Endpoints也是一个资源对象，Service通过筛选标签到的Pod会添加到Endpints中保存</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@k8s-worker1 zwf]# kubectl get endpoints -n zwf
+NAME          ENDPOINTS                           AGE
+demoapp-svc   10.222.126.1:80,10.222.194.104:80   15m
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>这个时候，我们访问service的80端口，会访问到轮询访问到这两个pod中，我们就可以通过访问service来访问pod集合。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@k8s-worker1 zwf]# curl 10.0.0.74
+iKubernetes demoapp v1.0 !! ClientIP: 10.64.2.141, ServerName: demo-deploy-6c6d588789-nhzhl, ServerIP: 10.222.194.104!
+
+[root@k8s-worker1 zwf]# curl 10.0.0.74
+iKubernetes demoapp v1.0 !! ClientIP: 10.64.2.141, ServerName: demo-deploy-6c6d588789-h9gmd, ServerIP: 10.222.126.1!
+
+[root@k8s-worker1 zwf]# curl 10.0.0.74
+iKubernetes demoapp v1.0 !! ClientIP: 10.64.2.141, ServerName: demo-deploy-6c6d588789-nhzhl, ServerIP: 10.222.194.104!
+
+[root@k8s-worker1 zwf]# curl 10.0.0.74
+iKubernetes demoapp v1.0 !! ClientIP: 10.64.2.141, ServerName: demo-deploy-6c6d588789-h9gmd, ServerIP: 10.222.126.1!
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>除了通过ClusterIP访问，在集群中也能通过域名进行访问，访问方式：<code>&lt;serviceName&gt;.&lt;namespace&gt;.svc.cluster.local</code></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@k8s-worker1 zwf]# kubectl exec -it demo-deploy-6c6d588789-h9gmd -n zwf  -- nslookup demoapp-svc.zwf.svc.cluster.local
+Server:         10.0.0.2
+Address:        10.0.0.2#53
+
+Name:   demoapp-svc.zwf.svc.cluster.local
+Address: 10.0.0.74
+
+[root@k8s-worker1 zwf]# kubectl exec -it demo-deploy-6c6d588789-h9gmd -n zwf  -- curl demoapp-svc.zwf.svc.cluster.local
+iKubernetes demoapp v1.0 !! ClientIP: 10.64.2.153, ServerName: demo-deploy-6c6d588789-h9gmd, ServerIP: 10.222.126.1!
+
+[root@k8s-worker1 zwf]# kubectl exec -it demo-deploy-6c6d588789-h9gmd -n zwf  -- curl demoapp-svc.zwf.svc.cluster.local
+iKubernetes demoapp v1.0 !! ClientIP: 10.222.126.1, ServerName: demo-deploy-6c6d588789-nhzhl, ServerIP: 10.222.194.104!
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="使用nodeport-service"><a href="#使用nodeport-service" class="header-anchor">#</a> 使用NodePort Service</h2> <p>定义NodePort Service如下，和ClusterIP Service比较，新增<code>type: NodePort</code>代表该Service的类型是NodePort，然后nodePort是节点的端口，在每一台Node上都会创建这么一个端口给集群外调用。</p> <div class="language-yaml line-numbers-mode"><pre class="language-yaml"><code><span class="token key atrule">kind</span><span class="token punctuation">:</span> Service
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> demoapp<span class="token punctuation">-</span>nodeport<span class="token punctuation">-</span>svc
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">selector</span><span class="token punctuation">:</span>
+    <span class="token key atrule">app</span><span class="token punctuation">:</span> demoapp
+  <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> http
+    <span class="token key atrule">protocol</span><span class="token punctuation">:</span> TCP
+    <span class="token key atrule">port</span><span class="token punctuation">:</span> <span class="token number">80</span>
+    <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">80</span>
+    <span class="token key atrule">nodePort</span><span class="token punctuation">:</span> <span class="token number">31999</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> NodePort
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>创建该Service，可以看到TYPE是NodePort，PORT是80:31999代表着将80端口映射到节点的31999端口</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>[root@k8s-worker1 zwf]# kubectl apply -f service_nodeport.yaml -n zwf
+service/demoapp-nodeport-svc created
+
+[root@k8s-worker1 zwf]# kubectl get svc -n zwf -o wide
+NAME                   TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE   SELECTOR
+demoapp-nodeport-svc   NodePort    10.0.0.144   &lt;none&gt;        80:31999/TCP   10s   app=demoapp
+demoapp-svc            ClusterIP   10.0.0.74    &lt;none&gt;        80/TCP         47m   app=demoapp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>我们可以在集群外通过节点的IP:31999端口一样可以访问Pod服务。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>C:\Users\User&gt;curl 10.64.2.141:31999
+iKubernetes demoapp v1.0 !! ClientIP: 10.64.2.141, ServerName: demo-deploy-6c6d588789-nhzhl, ServerIP: 10.222.194.104!
+
+C:\Users\User&gt;curl 10.64.2.141:31999
+iKubernetes demoapp v1.0 !! ClientIP: 10.64.2.141, ServerName: demo-deploy-6c6d588789-h9gmd, ServerIP: 10.222.126.1!
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="如何实现的代理"><a href="#如何实现的代理" class="header-anchor">#</a> 如何实现的代理？</h2> <p>每个Node都会有一个kube-proxy进程，该进程会监控Service的创建与EndPoints列表的添加与删除，配置iptables规则，当客户端请求Service的ClusterIP和端口时，会根据规则轮询转发到后端的Pod中。</p> <p><img src="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220808185926.png" alt=""></p></div></div>  <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=k8s" title="标签">#k8s</a><a href="/tags/?tag=%E5%AE%B9%E5%99%A8" title="标签">#容器</a><a href="/tags/?tag=%E4%BA%91%E5%8E%9F%E7%94%9F" title="标签">#云原生</a></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2023/01/15, 20:17:10</span></div></div> <div class="page-nav-wapper"><!----> <!----></div></div> <div class="article-list"><div class="article-title"><a href="/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/pages/adedbd/"><div>
+            pulsar阻塞导致logstash无法接入日志
+            <!----></div></a> <span class="date">10-30</span></dt></dl><dl><dd>02</dd> <dt><a href="/pages/4b0adb/"><div>
+            django-prometheus使用及源码分析
+            <!----></div></a> <span class="date">09-17</span></dt></dl><dl><dd>03</dd> <dt><a href="/pages/6e0045/"><div>
+            kube-proxy源码分析
+            <!----></div></a> <span class="date">01-18</span></dt></dl> <dl><dd></dd> <dt><a href="/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:326695231@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/tenqaz" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://www.zhengwenfeng.com/rss.xml" title="RSS订阅" target="_blank" class="iconfont icon-rss"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2022-2025
+    <span>zhengwenfeng | <a href="https://github.com/tenqaz/tenqaz.github.io/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><div></div><!----></div></div>
+    <script src="/assets/js/app.4e415190.js" defer></script><script src="/assets/js/2.24a7111f.js" defer></script><script src="/assets/js/12.f3519955.js" defer></script>
+  </body>
+</html>
