@@ -5,47 +5,14 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
-      {
-        text: '编程',
-        link: '/code/',
-        items: [
-          {
-            text: 'python之路',
-            link: '/python/'
-          },
-          {
-            text: 'go之路',
-            link: '/go/'
-          },
-          {
-            text: 'linux',
-            link: '/linux/'
-          },
-          {
-            text: '其他',
-            link: '/pages/19cfb6/'
-          }
-        ]
-      },
-      {
-        text: '中间件',
-        link: '/middleware/',
-        items: [
-          {text: 'kafka', link: '/kafka/'},
-          {text: 'mysql', link: '/mysql/'},
-          {text: 'redis', link: '/redis/'},
-          {text: 'logstash', link: '/logstash/'},
-        ]
-      },
-      {
-        text: '云原生',
-        link: '/CloudNative/',
-        items: [
-          {text: 'docker', link: '/docker/'},
-          {text: 'k8s', link: '/k8s/'}
-        ]
-      },
-      { text: '读书破万卷', link: '/readbook/' },
+      { text: '分类', link: '/categories/' },
+      { text: '标签', link: '/tags/' },
+      { text: '归档', link: '/archives/' },
+      // {
+      //   text: '编程',
+      //   link: '/code/'
+      // },
+      // { text: '读书破万卷', link: '/readbook/' },
       { text: '关于', link: '/about/' },
       { text: '我的工具', 
         items: [
@@ -63,20 +30,18 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
             items: [
               { text: '开往', link: 'https://www.travellings.cn/go.html' },
             ]
-          },
-          {
-            text: '索引',
-            link: '/archives/',
-            items: [
-              { text: '分类', link: '/categories/' },
-              { text: '标签', link: '/tags/' },
-              { text: '归档', link: '/archives/' },
-            ],
-          },
+          }
         ],
       },
-      
-      
+      // {
+      //   text: '索引',
+      //   link: '/archives/',
+      //   items: [
+      //     { text: '分类', link: '/categories/' },
+      //     { text: '标签', link: '/tags/' },
+      //     { text: '归档', link: '/archives/' },
+      //   ],
+      // }
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/me.jpg', // 导航栏logo
@@ -124,7 +89,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
     // defaultMode: 'auto',
 
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
-    sidebar: 'structuring',
+    // sidebar: 'structuring',
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
@@ -174,7 +139,10 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
         link: 'https://github.com/tenqaz'
       },
       description: '',
-      comment: true
+      comment: true,
+      feed: {
+        enable: true
+      }
     },
 
     // 自定义hmtl(广告)模块
