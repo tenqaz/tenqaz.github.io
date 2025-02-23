@@ -129,7 +129,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
     footer: {
       createYear: 2022, // 博客创建年份
       copyrightInfo:
-        'zhengwenfeng | <a href="https://github.com/tenqaz/tenqaz.github.io/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        'zhengwenfeng | <a href="https://github.com/tenqaz/tenqaz.github.io/master/LICENSE" target="_blank">MIT License</a> | 赣ICP备2025055428号', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
