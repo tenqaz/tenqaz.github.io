@@ -9,7 +9,7 @@ tags:
 author: 
   name: zhengwenfeng
   link: https://github.com/tenqaz
-description: 
+description: MCP 全称为 Model Context Protocol，是一个大模型智能体与外部工具或者数据源的交互协议。也就是说，智能体可以通过该协议去调用所以支持该协议的服务，来增强智能体的能力。在没有 MCP 时，不同的智能体都需要对不同的外部工具做单独的适配才能调用，也就是都用自己独有的协议，有 MCP 后也就是统一了外部调用协议，减轻了智能体的开发成本，也可以快速接入不同的外部服务。本文主要是简单认识下 MCP，并利用 MCP 来调用本地文件系统和数据库来完成案例。
 comment: true
 feed: 
   enable: true
