@@ -5,6 +5,9 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
+      { text: '专题', items: [
+        {text: "Go语言高性能编程", link: '/go_performance/'}
+      ]},
       { text: '分类', link: '/categories/' },
       { text: '标签', link: '/tags/' },
       { text: '归档', link: '/archives/' },
@@ -43,7 +46,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
       //   ],
       // }
     ],
-    sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
+    sidebarDepth: 3, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/me.jpg', // 导航栏logo
     repo: 'tenqaz/tenqaz.github.io', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
@@ -89,7 +92,7 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
     // defaultMode: 'auto',
 
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
-    // sidebar: 'structuring',
+    sidebar: 'structuring',
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
