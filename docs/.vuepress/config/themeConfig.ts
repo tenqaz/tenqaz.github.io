@@ -6,7 +6,8 @@ const themeConfig: VdoingThemeConfig['themeConfig'] = {
     nav: [
       { text: '首页', link: '/' },
       { text: '专题', items: [
-        {text: "Go语言高性能编程", link: '/go_performance/'}
+        {text: "Go语言高性能编程", link: '/go_performance/'},
+        {text: "Bug 通缉令", link: '/bug_hunt/'}
       ]},
       { text: '分类', link: '/categories/' },
       { text: '标签', link: '/tags/' },
