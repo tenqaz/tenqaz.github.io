@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>郑文峰的博客</title>
+        <link>https://www.zhengwenfeng.com</link>
+        <description>技术博客，专注于后端学习与总结，python,go,redis,k8s,mysql,kafka,flask,django,tornado,git,github,markdown等技术类文章</description>
+        <lastBuildDate>Mon, 22 Sep 2025 08:54:41 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+        <atom:link href="https://www.zhengwenfeng.com/feed.atom" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[容器的本质]]></title>
+            <link>https://www.zhengwenfeng.com/pages/f3cf17/</link>
+            <guid>https://www.zhengwenfeng.com/pages/f3cf17/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:11:48 GMT</pubDate>
+            <description><![CDATA[容器实现的主要技术：namespace、cgroup、chroot, 通过代码实现一个容器来深入理解其本质。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[手动实现docker容器bridge网络模型]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d3768c/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d3768c/</guid>
+            <pubDate>Sun, 08 Jan 2023 10:52:18 GMT</pubDate>
+            <description><![CDATA[本文主要是通过使用Network Namespace来模式docker的bridge模式来深入的理解其原理。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/16731830378711673183036984.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[docker容器]]></title>
+            <link>https://www.zhengwenfeng.com/pages/39f36e/</link>
+            <guid>https://www.zhengwenfeng.com/pages/39f36e/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:11:29 GMT</pubDate>
+            <description><![CDATA[简介docker及其使用方法]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220705193057.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[k8s之Pod]]></title>
+            <link>https://www.zhengwenfeng.com/pages/2b547f/</link>
+            <guid>https://www.zhengwenfeng.com/pages/2b547f/</guid>
+            <pubDate>Tue, 30 Aug 2022 12:48:34 GMT</pubDate>
+            <description><![CDATA[介绍k8s中的pod资源对象，及其使用方法和案例]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220331113937.png#crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;id=mo242&amp;originHeight=381&amp;originWidth=481&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;title=">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[k8s之Deployment]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d73c88/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d73c88/</guid>
+            <pubDate>Mon, 29 Aug 2022 16:27:11 GMT</pubDate>
+            <description><![CDATA[介绍k8s中的deployment资源对象，及其使用方法和案例]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220820143105.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[docker容器单机网络]]></title>
+            <link>https://www.zhengwenfeng.com/pages/0ddeb7/</link>
+            <guid>https://www.zhengwenfeng.com/pages/0ddeb7/</guid>
+            <pubDate>Sun, 08 Jan 2023 10:52:41 GMT</pubDate>
+            <description><![CDATA[本文主要讲述docker容器的四种网络模式：host、bridge、container、null，并介绍它们的使用方法及实现原理。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/16731831018681673183100953.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[k8s之Service]]></title>
+            <link>https://www.zhengwenfeng.com/pages/1f860b/</link>
+            <guid>https://www.zhengwenfeng.com/pages/1f860b/</guid>
+            <pubDate>Tue, 30 Aug 2022 16:59:37 GMT</pubDate>
+            <description><![CDATA[介绍k8s中的service资源对象，及其使用方法和案例]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220808185926.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[k8s之ConfigMap和Secret]]></title>
+            <link>https://www.zhengwenfeng.com/pages/ff8188/</link>
+            <guid>https://www.zhengwenfeng.com/pages/ff8188/</guid>
+            <pubDate>Tue, 30 Aug 2022 21:16:09 GMT</pubDate>
+            <description><![CDATA[介绍k8s中的configmap和secret资源对象，及其使用方法和案例]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言高性能编程]]></title>
+            <link>https://www.zhengwenfeng.com/go_performance/</link>
+            <guid>https://www.zhengwenfeng.com/go_performance/</guid>
+            <pubDate>Sat, 14 Jun 2025 23:31:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[k8s之Job和CronJob]]></title>
+            <link>https://www.zhengwenfeng.com/pages/c96905/</link>
+            <guid>https://www.zhengwenfeng.com/pages/c96905/</guid>
+            <pubDate>Wed, 31 Aug 2022 10:34:54 GMT</pubDate>
+            <description><![CDATA[介绍k8s中的job资源对象，及其使用方法和案例]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220721102314.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Bug 通缉令]]></title>
+            <link>https://www.zhengwenfeng.com/bug_hunt/</link>
+            <guid>https://www.zhengwenfeng.com/bug_hunt/</guid>
+            <pubDate>Sun, 14 Sep 2025 10:59:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[k8s之DaemonSet]]></title>
+            <link>https://www.zhengwenfeng.com/pages/92bee4/</link>
+            <guid>https://www.zhengwenfeng.com/pages/92bee4/</guid>
+            <pubDate>Wed, 31 Aug 2022 11:06:48 GMT</pubDate>
+            <description><![CDATA[介绍k8s中的daemonset资源对象，及其使用方法和案例]]></description>
+        </item>
+        <item>
+            <title><![CDATA[k8s之PV、PVC和StorageClass]]></title>
+            <link>https://www.zhengwenfeng.com/pages/095c75/</link>
+            <guid>https://www.zhengwenfeng.com/pages/095c75/</guid>
+            <pubDate>Wed, 31 Aug 2022 15:03:37 GMT</pubDate>
+            <description><![CDATA[介绍k8s中的pv、pvc和storageclass资源对象，及其使用方法和案例]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220831163136.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[使用kubeadm安装k8s]]></title>
+            <link>https://www.zhengwenfeng.com/pages/9e17c8/</link>
+            <guid>https://www.zhengwenfeng.com/pages/9e17c8/</guid>
+            <pubDate>Tue, 13 Sep 2022 20:14:37 GMT</pubDate>
+            <description><![CDATA[介绍如何使用kubeadm来搭建一个小型的k8s集群]]></description>
+        </item>
+        <item>
+            <title><![CDATA[k8s之StatefulSet]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d178a2/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d178a2/</guid>
+            <pubDate>Wed, 31 Aug 2022 14:55:02 GMT</pubDate>
+            <description><![CDATA[介绍k8s中的statefulset资源对象，及其使用方法和案例]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220831173844.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[django后端服务、logstash和flink接入VictoriaMetrics指标监控]]></title>
+            <link>https://www.zhengwenfeng.com/pages/b1b4a3/</link>
+            <guid>https://www.zhengwenfeng.com/pages/b1b4a3/</guid>
+            <pubDate>Tue, 21 Feb 2023 11:05:03 GMT</pubDate>
+            <description><![CDATA[通过指标监控可以设置对应的告警，快速发现问题，并通过相应的指标定位问题。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20230221110733.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[pod中将代码与运行环境分离]]></title>
+            <link>https://www.zhengwenfeng.com/pages/27987d/</link>
+            <guid>https://www.zhengwenfeng.com/pages/27987d/</guid>
+            <pubDate>Mon, 14 Nov 2022 09:56:31 GMT</pubDate>
+            <description><![CDATA[我们在创建一个 python 的 web 服务的镜像时，一般的做法是，将 python 环境与代码打包成一个镜像，然后将这个镜像进行发布。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20221114095752.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[理解calico容器网络通信方案原理]]></title>
+            <link>https://www.zhengwenfeng.com/pages/f0f725/</link>
+            <guid>https://www.zhengwenfeng.com/pages/f0f725/</guid>
+            <pubDate>Sat, 03 Jun 2023 11:04:25 GMT</pubDate>
+            <description><![CDATA[Calico是k8s中常用的容器解决方案的插件，本文主要介绍BGP模式和IPIP模式是如何解决的，并详细了解其原理，并通过实验加深理解。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/c__Users_User_OneDrive_workspace_excalidraw_calico.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[理解flannel的三种容器网络方案原理]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d9d0ce/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d9d0ce/</guid>
+            <pubDate>Thu, 01 Jun 2023 12:56:36 GMT</pubDate>
+            <description><![CDATA[本文主要介绍flannel在k8s网络中作为网络插件通过UDP、VXLAN、HOST-GATEWAY三种模式来解决容器跨主机网络通信的，并通过手动实现这三种模式深入理解其原理。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20230603100424.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[kubernetes service如何通过iptables转发]]></title>
+            <link>https://www.zhengwenfeng.com/pages/b3955c/</link>
+            <guid>https://www.zhengwenfeng.com/pages/b3955c/</guid>
+            <pubDate>Thu, 18 Jan 2024 16:40:30 GMT</pubDate>
+            <description><![CDATA[本文主要是介绍kubernetes的service是如何利用iptables来进行流量的转发达到流量的负载均衡的，并会通过实践操作来更好的理解与验证其原理。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/image-20240110142336-wl40wxw.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[一次服务升级时pg表DDL执行超时失败]]></title>
+            <link>https://www.zhengwenfeng.com/pages/cf65ba/</link>
+            <guid>https://www.zhengwenfeng.com/pages/cf65ba/</guid>
+            <pubDate>Sun, 14 Sep 2025 10:07:39 GMT</pubDate>
+            <description><![CDATA[本文详细分析了一次因PostgreSQL表DDL执行超时失败而导致的服务升级问题，通过SQL查询和代码审查定位到问题根源，揭示了数据库锁机制和资源管理的重要性。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17578168418231757816840915.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[kube-proxy源码分析]]></title>
+            <link>https://www.zhengwenfeng.com/pages/6e0045/</link>
+            <guid>https://www.zhengwenfeng.com/pages/6e0045/</guid>
+            <pubDate>Thu, 18 Jan 2024 16:43:23 GMT</pubDate>
+            <description><![CDATA[本文主要是对kube-proxy的源码分析，了解其代码结构和实现原理。这里是根据kubernetes1.23.9版本来进行分析的。在下面贴上的代码会一定裁剪，主要用于理解主流程。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/image-20240118162033-mma8vs8.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[服务启动时出现 OOM]]></title>
+            <link>https://www.zhengwenfeng.com/pages/de98b1/</link>
+            <guid>https://www.zhengwenfeng.com/pages/de98b1/</guid>
+            <pubDate>Mon, 22 Sep 2025 15:39:13 GMT</pubDate>
+            <description><![CDATA[本文详细记录了一次在Kubernetes环境中Golang服务启动时出现OOM（Out of Memory）问题的排查和解决过程。服务在启动约2分钟后出现内存溢出，通过pprof工具分析发现主要问题源于bytes.Buffer对象的频繁扩容。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17585287225681758528722158.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[kafka中listener和advertised.listeners的作用]]></title>
+            <link>https://www.zhengwenfeng.com/pages/fa114f/</link>
+            <guid>https://www.zhengwenfeng.com/pages/fa114f/</guid>
+            <pubDate>Mon, 01 May 2023 17:41:02 GMT</pubDate>
+            <description><![CDATA[如下配置：]]></description>
+        </item>
+        <item>
+            <title><![CDATA[mysql之日志]]></title>
+            <link>https://www.zhengwenfeng.com/pages/2d69c7/</link>
+            <guid>https://www.zhengwenfeng.com/pages/2d69c7/</guid>
+            <pubDate>Sun, 01 Jan 2023 20:23:07 GMT</pubDate>
+            <description><![CDATA[一条数据在更新过程当中，如果中途 mysql crash 了，mysql 是如何保证数据的一致性和持久性的？在这个过程中 mysql 的日志系统起到了至关重要的作用。本文将会介绍 mysql 中的 undo log、redo log 和 bin log 在这其中的作用。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/16699026890611669902688907.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[mysql之MVCC原理]]></title>
+            <link>https://www.zhengwenfeng.com/pages/0d8f4a/</link>
+            <guid>https://www.zhengwenfeng.com/pages/0d8f4a/</guid>
+            <pubDate>Sun, 01 Jan 2023 20:23:21 GMT</pubDate>
+            <description><![CDATA[MVCC 的全称是 Multi- Version Concurrency Control，也就是多版本并发控制，该机制是只有支持事务的 InnoDB 引擎下才存在的，用来实现提高数据库的并发性能，可以做到：读不加锁，读写不冲突。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210821150008.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[redis之五种基本数据类型]]></title>
+            <link>https://www.zhengwenfeng.com/pages/2bbeb3/</link>
+            <guid>https://www.zhengwenfeng.com/pages/2bbeb3/</guid>
+            <pubDate>Thu, 01 Dec 2022 15:16:14 GMT</pubDate>
+            <description><![CDATA[本文主要讲解 redis 的五种基本数据类型：String、List、Set、Sorted Set、Hash。学习如何使用它们，并且了解它们的底层数据结构实现，这样我们才能在适当的应用场景选择最适合的数据类型来解决我们的需求。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210820163352.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[redis之持久化]]></title>
+            <link>https://www.zhengwenfeng.com/pages/4c6b13/</link>
+            <guid>https://www.zhengwenfeng.com/pages/4c6b13/</guid>
+            <pubDate>Thu, 01 Dec 2022 15:18:02 GMT</pubDate>
+            <description><![CDATA[本文主要是介绍 redis 是如何进行持久化数据的，我们知道 redis 是基于内存的数据库，那么只要服务器一旦宕机，那么数据则将全部丢失，如果从后端数据库进行恢复，则可能导致性能变慢，那么 redis 需要自身持久化，而不通过后端数据库来恢复数据是重要的。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210805185829.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[redis之主从库同步]]></title>
+            <link>https://www.zhengwenfeng.com/pages/8072eb/</link>
+            <guid>https://www.zhengwenfeng.com/pages/8072eb/</guid>
+            <pubDate>Thu, 01 Dec 2022 15:18:20 GMT</pubDate>
+            <description><![CDATA[在单点故障后，我们需要保证服务不间断，所以需要使用冗余的副本提供集群服务，从而达到服务的高可用。redis 提供了主从库数据同步机制，从而保证数据副本的一致性，而主从库使用的是读写分离的机制。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210806172905.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[redis之哨兵机制]]></title>
+            <link>https://www.zhengwenfeng.com/pages/ffee9e/</link>
+            <guid>https://www.zhengwenfeng.com/pages/ffee9e/</guid>
+            <pubDate>Thu, 01 Dec 2022 15:18:35 GMT</pubDate>
+            <description><![CDATA[本文主要介绍的是 Redis 提供的哨兵机制，通过哨兵监控主库的状况，如果发现主库下线，则会从从库中选择一个状态优秀的当做主库，从而保证服务的高可用。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210807101732.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[redis之分片集群]]></title>
+            <link>https://www.zhengwenfeng.com/pages/1c2914/</link>
+            <guid>https://www.zhengwenfeng.com/pages/1c2914/</guid>
+            <pubDate>Thu, 01 Dec 2022 15:18:45 GMT</pubDate>
+            <description><![CDATA[在海量的数据面前，单个 redis 实例的能力是有限的，无可能无限增大的内存，所以必须要构建分片集群，来横向拓展来支持保存更多的数据。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210808133416.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[redis之缓存]]></title>
+            <link>https://www.zhengwenfeng.com/pages/0d7b25/</link>
+            <guid>https://www.zhengwenfeng.com/pages/0d7b25/</guid>
+            <pubDate>Thu, 01 Dec 2022 15:18:55 GMT</pubDate>
+            <description><![CDATA[reids 是基于内存的数据库，它的特性之一就快，缓存是其最主要的应用场景，本文主要介绍 redis 的缓存特性，以及该如何正确的使用它。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/16698736280551669873627898.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[python迭代器与生成器]]></title>
+            <link>https://www.zhengwenfeng.com/pages/e31b06/</link>
+            <guid>https://www.zhengwenfeng.com/pages/e31b06/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[本文介绍了python的迭代器与生成器的用法与原理]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604801659428.png#crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;id=Wm3Ir&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;title=">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[python元编程]]></title>
+            <link>https://www.zhengwenfeng.com/pages/5fa368/</link>
+            <guid>https://www.zhengwenfeng.com/pages/5fa368/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[本文介绍python中元编程的属性及使用方法]]></description>
+        </item>
+        <item>
+            <title><![CDATA[pulsar阻塞导致logstash无法接入日志]]></title>
+            <link>https://www.zhengwenfeng.com/pages/adedbd/</link>
+            <guid>https://www.zhengwenfeng.com/pages/adedbd/</guid>
+            <pubDate>Wed, 30 Oct 2024 10:34:05 GMT</pubDate>
+            <description><![CDATA[在使用tcp和udp接入方式接入一段时间日志之后，日志突然无法接入了，在pulsar中的对应topic没有新的日志生产进来了。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17302568788191730256878496.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[python上下文管理器]]></title>
+            <link>https://www.zhengwenfeng.com/pages/a6b804/</link>
+            <guid>https://www.zhengwenfeng.com/pages/a6b804/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[python的上下文管理的使用及实现的几种方式]]></description>
+        </item>
+        <item>
+            <title><![CDATA[python垃圾回收机制]]></title>
+            <link>https://www.zhengwenfeng.com/pages/78c648/</link>
+            <guid>https://www.zhengwenfeng.com/pages/78c648/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[python的垃圾回收机制的几种方式：引用计数、标记清楚及分代回收，介绍他们的原理。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220907215650.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[使用python实现单例模式的三种方式]]></title>
+            <link>https://www.zhengwenfeng.com/pages/33b8d0/</link>
+            <guid>https://www.zhengwenfeng.com/pages/33b8d0/</guid>
+            <pubDate>Sat, 10 Dec 2022 16:47:40 GMT</pubDate>
+            <description><![CDATA[本文主要介绍使用python的三种实现单例模式的方式。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[python中import原理]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d8fd49/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d8fd49/</guid>
+            <pubDate>Tue, 07 Feb 2023 09:34:33 GMT</pubDate>
+            <description><![CDATA[本文介绍python正在import module时做了什么，它又是如何加载module的。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[python装饰器的使用方法]]></title>
+            <link>https://www.zhengwenfeng.com/pages/7434f1/</link>
+            <guid>https://www.zhengwenfeng.com/pages/7434f1/</guid>
+            <pubDate>Sun, 23 Oct 2022 17:18:08 GMT</pubDate>
+            <description><![CDATA[介绍python中的装饰器的几种常见的使用方法并理解它们的实现原理。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[使用ddt实现unittest的参数化测试]]></title>
+            <link>https://www.zhengwenfeng.com/pages/8d9ab9/</link>
+            <guid>https://www.zhengwenfeng.com/pages/8d9ab9/</guid>
+            <pubDate>Wed, 12 Oct 2022 14:48:10 GMT</pubDate>
+            <description><![CDATA[本文介绍如何使用ddt库来完成unitest的参数化设置。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django-apschedule定时任务异常停止]]></title>
+            <link>https://www.zhengwenfeng.com/pages/ec5110/</link>
+            <guid>https://www.zhengwenfeng.com/pages/ec5110/</guid>
+            <pubDate>Mon, 30 Oct 2023 16:53:28 GMT</pubDate>
+            <description><![CDATA[在django项目中使用django-apschedule来实现定时任务，使用的是BackgroundScheduler调度类，该调度的实现是通过后台线程的方式执行定时任务。其中任务都是持久化到数据库中的。在项目的运行过程中，因为数据库的异常，导致定时任务线程异常终止，即使数据库后续恢复正常，但也不再继续执行。我多次尝试复现未果，在开启定时任务期间，手动将数据库连接断开，定时任务执行失败，然后再将数据库建立连接，定时任务竟然重新恢复了，这让我一时摸不着头脑。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[ddt源码分析]]></title>
+            <link>https://www.zhengwenfeng.com/pages/069c65/</link>
+            <guid>https://www.zhengwenfeng.com/pages/069c65/</guid>
+            <pubDate>Sun, 23 Oct 2022 20:04:51 GMT</pubDate>
+            <description><![CDATA[ddt 是 python 的第三方库，主要是解决使用 unittest 来写单测时可以支持参数化的配置，本文介绍源码解析该库，理解它的实现过程。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django rest_framework使用jwt]]></title>
+            <link>https://www.zhengwenfeng.com/pages/25eafd/</link>
+            <guid>https://www.zhengwenfeng.com/pages/25eafd/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[本文介绍在 django rest_framework 使用jwt认证.]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604218012751.jpg#alt=">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[django rest_framework Authentication]]></title>
+            <link>https://www.zhengwenfeng.com/pages/626675/</link>
+            <guid>https://www.zhengwenfeng.com/pages/626675/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[本文介绍的是 django rest_framework的认证方式.]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604217645776.png#alt=">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[django rest_framework异常处理]]></title>
+            <link>https://www.zhengwenfeng.com/pages/070fec/</link>
+            <guid>https://www.zhengwenfeng.com/pages/070fec/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[当程序中出现异常时，我们想要返回的是包含异常信息的json数据。返回正常的信息和异常信息的格式一致化。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django celery 结合使用]]></title>
+            <link>https://www.zhengwenfeng.com/pages/853501/</link>
+            <guid>https://www.zhengwenfeng.com/pages/853501/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[本文主要介绍django和celery结合使用的案例。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604217044049.png#alt=#crop=0&amp;crop=0&amp;crop=1&amp;crop=1&amp;id=kAMz1&amp;originHeight=475&amp;originWidth=564&amp;originalType=binary&amp;ratio=1&amp;rotation=0&amp;showTitle=false&amp;status=done&amp;style=none&amp;title=">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[django压缩文件下载]]></title>
+            <link>https://www.zhengwenfeng.com/pages/f2738b/</link>
+            <guid>https://www.zhengwenfeng.com/pages/f2738b/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[介绍在django中，如何将数据生成zip文件提供给用户进行下载]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django rest_framework使用pytest单元测试]]></title>
+            <link>https://www.zhengwenfeng.com/pages/c28126/</link>
+            <guid>https://www.zhengwenfeng.com/pages/c28126/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[介绍在django的rest_framework中如何使用pytest进行单元测试而不是自带的测试框架。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django rest_framework 自定义文档]]></title>
+            <link>https://www.zhengwenfeng.com/pages/c3af6a/</link>
+            <guid>https://www.zhengwenfeng.com/pages/c3af6a/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[django rest_framework 自动生成文档的功能，能够很好的给前端提供帮助，在文档中可以看到api的参数和其提供的功能信息，并且还能够在上面直接测试api接口。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django restframework choice 自定义输出数据]]></title>
+            <link>https://www.zhengwenfeng.com/pages/b90015/</link>
+            <guid>https://www.zhengwenfeng.com/pages/b90015/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[介绍如何在django restframework中使用choice来自定义输出数据。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django Filtering 使用]]></title>
+            <link>https://www.zhengwenfeng.com/pages/cfdb5f/</link>
+            <guid>https://www.zhengwenfeng.com/pages/cfdb5f/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[介绍django-filter是如何使用的。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604217188654.png#alt=">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[django viewset 和 Router 配合使用时报的错]]></title>
+            <link>https://www.zhengwenfeng.com/pages/e75ceb/</link>
+            <guid>https://www.zhengwenfeng.com/pages/e75ceb/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[解决django viewset和router配合使用时报的错误]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django model的序列化]]></title>
+            <link>https://www.zhengwenfeng.com/pages/acdd50/</link>
+            <guid>https://www.zhengwenfeng.com/pages/acdd50/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[django model如何实现序列化。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604217291865.png#alt=">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[django中使用AbStractUser]]></title>
+            <link>https://www.zhengwenfeng.com/pages/382755/</link>
+            <guid>https://www.zhengwenfeng.com/pages/382755/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[介绍在django中如何使用AbStractUser]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django.core.exceptions.ImproperlyConfigured Application labels aren't unique, duplicates users]]></title>
+            <link>https://www.zhengwenfeng.com/pages/060c51/</link>
+            <guid>https://www.zhengwenfeng.com/pages/060c51/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[使用pycharm professional 开发django时出现以下异常。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604218742346.png#alt=">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[django 中 media配置]]></title>
+            <link>https://www.zhengwenfeng.com/pages/de01e2/</link>
+            <guid>https://www.zhengwenfeng.com/pages/de01e2/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[media文件夹一般用于上传媒体文件到服务中存放的地方。介绍在django中如何使用media的配置]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django 外键引用自身和on_delete参数]]></title>
+            <link>https://www.zhengwenfeng.com/pages/b422bd/</link>
+            <guid>https://www.zhengwenfeng.com/pages/b422bd/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[django中使用外键引用自身的方法及on_delete参数的配置]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django 警告 while time zone support is active]]></title>
+            <link>https://www.zhengwenfeng.com/pages/f0d816/</link>
+            <guid>https://www.zhengwenfeng.com/pages/f0d816/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[django中的时区问题]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Flask使用flask_socketio实现websocket]]></title>
+            <link>https://www.zhengwenfeng.com/pages/b71dc2/</link>
+            <guid>https://www.zhengwenfeng.com/pages/b71dc2/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[在flask中使用flask_socketio来实现websocket的功能。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[django-prometheus使用及源码分析]]></title>
+            <link>https://www.zhengwenfeng.com/pages/4b0adb/</link>
+            <guid>https://www.zhengwenfeng.com/pages/4b0adb/</guid>
+            <pubDate>Tue, 17 Sep 2024 15:18:44 GMT</pubDate>
+            <description><![CDATA[而本文主要是介绍使用django-prometheus来对django服务添加对prometheus指标的支持，它已经内置了部分的指标采集，包括请求、数据库和缓存等方面的指标。除了使用方法外，也会对其源码进行分析，看它是如何实现的。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1726558982722image-20240917134902-uu4hpp3.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[django rest_framework 分页]]></title>
+            <link>https://www.zhengwenfeng.com/pages/cb262f/</link>
+            <guid>https://www.zhengwenfeng.com/pages/cb262f/</guid>
+            <pubDate>Mon, 20 Mar 2023 11:32:52 GMT</pubDate>
+            <description><![CDATA[本文主要介绍在drf框架中如何对查询的数据进行分页，在drf框架中有提供该基础功能的使用案例和文档，详情参考drf-pagination-官网文档]]></description>
+        </item>
+        <item>
+            <title><![CDATA[flask结合mongo]]></title>
+            <link>https://www.zhengwenfeng.com/pages/c59edf/</link>
+            <guid>https://www.zhengwenfeng.com/pages/c59edf/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[在flask中集成第三方库flask-mongoengine来通过ORM操作mongo数据库]]></description>
+        </item>
+        <item>
+            <title><![CDATA[tornado 文件上传]]></title>
+            <link>https://www.zhengwenfeng.com/pages/4c38f5/</link>
+            <guid>https://www.zhengwenfeng.com/pages/4c38f5/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[tornado实现的文件上传功能]]></description>
+        </item>
+        <item>
+            <title><![CDATA[tornado 使用jwt完成用户异步认证]]></title>
+            <link>https://www.zhengwenfeng.com/pages/c24905/</link>
+            <guid>https://www.zhengwenfeng.com/pages/c24905/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[tornado使用jwt实现用户的异步认证]]></description>
+        </item>
+        <item>
+            <title><![CDATA[tornado 用户密码 bcrypt加密]]></title>
+            <link>https://www.zhengwenfeng.com/pages/22f35b/</link>
+            <guid>https://www.zhengwenfeng.com/pages/22f35b/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[使用bcrypt来实现对用户密码进行加密]]></description>
+        </item>
+        <item>
+            <title><![CDATA[tornado 结合wtforms使用表单操作]]></title>
+            <link>https://www.zhengwenfeng.com/pages/7ac01f/</link>
+            <guid>https://www.zhengwenfeng.com/pages/7ac01f/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[tornado使用wtforms来对表单进行验证与操作。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[tornado finish和write区别]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d18657/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d18657/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[介绍tornado中finish和write的区别]]></description>
+        </item>
+        <item>
+            <title><![CDATA[python简单使用grpc]]></title>
+            <link>https://www.zhengwenfeng.com/pages/f9d78c/</link>
+            <guid>https://www.zhengwenfeng.com/pages/f9d78c/</guid>
+            <pubDate>Tue, 06 Sep 2022 19:45:31 GMT</pubDate>
+            <description><![CDATA[简单介绍Python如何使用grpc]]></description>
+        </item>
+        <item>
+            <title><![CDATA[tornado 使用peewee-async 完成异步orm数据库操作]]></title>
+            <link>https://www.zhengwenfeng.com/pages/113ab1/</link>
+            <guid>https://www.zhengwenfeng.com/pages/113ab1/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[tornado中使用peewee-async来完成异步orm数据库操作]]></description>
+        </item>
+        <item>
+            <title><![CDATA[pyspark streaming简介 和 消费 kafka示例]]></title>
+            <link>https://www.zhengwenfeng.com/pages/72664a/</link>
+            <guid>https://www.zhengwenfeng.com/pages/72664a/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[简单介绍pyspark streaming以及消费kafka的示例]]></description>
+            <enclosure url="https://img-blog.csdnimg.cn/20190416164155495.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIyOTE4MjQz,size_16,color_FFFFFF,t_70">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[基于pre-commit的Python代码规范落地实践]]></title>
+            <link>https://www.zhengwenfeng.com/pages/7f6078/</link>
+            <guid>https://www.zhengwenfeng.com/pages/7f6078/</guid>
+            <pubDate>Mon, 12 May 2025 12:46:45 GMT</pubDate>
+            <description><![CDATA[pre-commit 是一个开源工具，用于管理和执行 Git 钩子，确保代码库的一致性和质量。通过在提交代码前自动运行代码风格检查（Linting）和格式修正（Formatting），它有助于保持项目代码的统一标准。本文将通过一个 Python 项目的实例，展示如何配置 pre-commit 工作流。本文旨在介绍使用 pre-commit 对 Python 项目进行代码检查的方法，以提前发现并解决代码中的问题，提高代码的整体质量。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[gin中validator模块的源码分析]]></title>
+            <link>https://www.zhengwenfeng.com/pages/c41003/</link>
+            <guid>https://www.zhengwenfeng.com/pages/c41003/</guid>
+            <pubDate>Sun, 11 Sep 2022 16:23:04 GMT</pubDate>
+            <description><![CDATA[在gin中使用的是validator模块来对表单进行校验的，本文主要是对该模块的源码分析与学习]]></description>
+        </item>
+        <item>
+            <title><![CDATA[go简单使用grpc]]></title>
+            <link>https://www.zhengwenfeng.com/pages/87014e/</link>
+            <guid>https://www.zhengwenfeng.com/pages/87014e/</guid>
+            <pubDate>Wed, 07 Sep 2022 20:10:13 GMT</pubDate>
+            <description><![CDATA[介绍go是如何使用grpc的]]></description>
+        </item>
+        <item>
+            <title><![CDATA[优化gin表单的错误提示信息]]></title>
+            <link>https://www.zhengwenfeng.com/pages/cf9a4d/</link>
+            <guid>https://www.zhengwenfeng.com/pages/cf9a4d/</guid>
+            <pubDate>Sun, 11 Sep 2022 16:53:33 GMT</pubDate>
+            <description><![CDATA[如何优化gin框架中表单的错误提示信息]]></description>
+        </item>
+        <item>
+            <title><![CDATA[go中如何处理error]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d93df5/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d93df5/</guid>
+            <pubDate>Mon, 14 Nov 2022 10:11:11 GMT</pubDate>
+            <description><![CDATA[在 go 中有 panic 的机制，但 panic 意味着程序终止，代码不能继续运行了，不能期望调用者来解决它。而 error 是预期中的异常，希望调用者可以对其进行处理的。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[tcp缓存引起的日志丢失]]></title>
+            <link>https://www.zhengwenfeng.com/pages/36b0b2/</link>
+            <guid>https://www.zhengwenfeng.com/pages/36b0b2/</guid>
+            <pubDate>Thu, 09 Nov 2023 15:49:47 GMT</pubDate>
+            <description><![CDATA[logstash从数据源拉取日志，然后通过tcp插件发送到proxy进程中。在业务侧发现日志量明显少了，所以有了这一次的问题排查。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20231109171607.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Go协程池深度解析：原理、实现与最佳实践]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d2c214/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d2c214/</guid>
+            <pubDate>Mon, 09 Jun 2025 20:07:50 GMT</pubDate>
+            <description><![CDATA[深入解析Go协程池的工作原理、实现方式及性能优化策略，包含基准测试对比和实际应用场景分析]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17494714259921749471425027.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[使用etcd分布式锁导致的协程泄露与死锁问题]]></title>
+            <link>https://www.zhengwenfeng.com/pages/91d2d9/</link>
+            <guid>https://www.zhengwenfeng.com/pages/91d2d9/</guid>
+            <pubDate>Tue, 13 May 2025 16:18:01 GMT</pubDate>
+            <description><![CDATA[本文记录自己在工作中排查etcd应用分布式锁而导致的泄露与死锁问题，并通过分析源码找到根因，最终解决。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言遍历性能深度解析：从原理到优化实践]]></title>
+            <link>https://www.zhengwenfeng.com/pages/88360d/</link>
+            <guid>https://www.zhengwenfeng.com/pages/88360d/</guid>
+            <pubDate>Sat, 14 Jun 2025 10:43:04 GMT</pubDate>
+            <description><![CDATA[在Go语言中，遍历是日常开发中最常见的操作之一。不同的遍历方式会对性能产生显著影响。本文将深入分析Go语言中遍历的性能特点，并探讨如何优化遍历以提高代码效率。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言Interface Boxing原理与性能优化指南]]></title>
+            <link>https://www.zhengwenfeng.com/pages/49057b/</link>
+            <guid>https://www.zhengwenfeng.com/pages/49057b/</guid>
+            <pubDate>Sat, 14 Jun 2025 09:34:09 GMT</pubDate>
+            <description><![CDATA[深入解析Go语言接口装箱(Boxing)机制，包含性能影响分析、基准测试对比及最佳实践建议]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言零拷贝技术完全指南]]></title>
+            <link>https://www.zhengwenfeng.com/pages/4f7497/</link>
+            <guid>https://www.zhengwenfeng.com/pages/4f7497/</guid>
+            <pubDate>Sat, 14 Jun 2025 11:42:51 GMT</pubDate>
+            <description><![CDATA[深入解析Go语言中零拷贝技术的实现原理、性能优势及最佳实践，包含详细基准测试数据和实际应用场景分析]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17498741316891749874131178.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Go语言不可变数据共享：无锁并发编程实践]]></title>
+            <link>https://www.zhengwenfeng.com/pages/b03207/</link>
+            <guid>https://www.zhengwenfeng.com/pages/b03207/</guid>
+            <pubDate>Sat, 14 Jun 2025 14:06:39 GMT</pubDate>
+            <description><![CDATA[深入解析Go语言中不可变数据共享模式的实现原理、性能优势及最佳实践]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言内存预分配完全指南]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d7dbc7/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d7dbc7/</guid>
+            <pubDate>Sat, 14 Jun 2025 14:51:20 GMT</pubDate>
+            <description><![CDATA[深入解析Go语言中Slice和Map的内存预分配技术，包含性能对比测试和实际应用场景分析]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17584416417421758441641274.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Go语言原子操作完全指南]]></title>
+            <link>https://www.zhengwenfeng.com/pages/821b25/</link>
+            <guid>https://www.zhengwenfeng.com/pages/821b25/</guid>
+            <pubDate>Sat, 14 Jun 2025 15:02:33 GMT</pubDate>
+            <description><![CDATA[深入解析Go语言原子操作的实现原理、性能优势及最佳实践，包含详细基准测试数据和实际应用场景分析]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言堆栈分配与逃逸分析深度解析]]></title>
+            <link>https://www.zhengwenfeng.com/pages/c19d45/</link>
+            <guid>https://www.zhengwenfeng.com/pages/c19d45/</guid>
+            <pubDate>Sat, 14 Jun 2025 17:30:57 GMT</pubDate>
+            <description><![CDATA[深入解析Go语言堆栈分配机制与逃逸分析原理，包含性能对比测试和实际优化建议]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言空结构体：零内存消耗的高效编程]]></title>
+            <link>https://www.zhengwenfeng.com/pages/df4833/</link>
+            <guid>https://www.zhengwenfeng.com/pages/df4833/</guid>
+            <pubDate>Sat, 14 Jun 2025 19:41:46 GMT</pubDate>
+            <description><![CDATA[深入解析Go语言空结构体的特性及其在高性能场景下的应用实践]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言字符串拼接性能对比与优化指南]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d4c8eb/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d4c8eb/</guid>
+            <pubDate>Sat, 14 Jun 2025 20:18:52 GMT</pubDate>
+            <description><![CDATA[本文详细对比了Go语言中6种字符串拼接方式的性能差异，通过基准测试数据揭示最佳实践，并提供实际开发中的优化建议。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言延迟初始化(Lazy Initialization)最佳实践]]></title>
+            <link>https://www.zhengwenfeng.com/pages/f9a2a3/</link>
+            <guid>https://www.zhengwenfeng.com/pages/f9a2a3/</guid>
+            <pubDate>Sat, 14 Jun 2025 20:32:05 GMT</pubDate>
+            <description><![CDATA[入解析Go语言中延迟初始化的实现原理和最佳实践，包括sync.Once、sync.OnceValue和sync.OnceValues的使用场景和性能优势]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Go语言结构体内存对齐完全指南]]></title>
+            <link>https://www.zhengwenfeng.com/pages/13969e/</link>
+            <guid>https://www.zhengwenfeng.com/pages/13969e/</guid>
+            <pubDate>Sat, 14 Jun 2025 19:54:38 GMT</pubDate>
+            <description><![CDATA[深入解析Go语言结构体内存对齐原理与优化实践，包含性能测试数据和实用工具推荐]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17499021159591749902115421.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Go语言高效IO缓冲技术详解]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d8ed61/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d8ed61/</guid>
+            <pubDate>Sat, 14 Jun 2025 22:47:01 GMT</pubDate>
+            <description><![CDATA[深入解析Go语言中缓冲I/O的工作原理、性能优势及最佳实践，包含基准测试数据对比和实际应用场景分析]]></description>
+        </item>
+        <item>
+            <title><![CDATA[快速了解iptables]]></title>
+            <link>https://www.zhengwenfeng.com/pages/72ba9a/</link>
+            <guid>https://www.zhengwenfeng.com/pages/72ba9a/</guid>
+            <pubDate>Mon, 15 May 2023 19:19:11 GMT</pubDate>
+            <description><![CDATA[iptables是一个在Linux操作系统上使用的防火墙工具，它可以用于配置和管理网络数据包的过滤、转发和修改等操作。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/2023-04-13-2330-20230514151755-we6q131.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[理解Linux TunTap设备]]></title>
+            <link>https://www.zhengwenfeng.com/pages/143447/</link>
+            <guid>https://www.zhengwenfeng.com/pages/143447/</guid>
+            <pubDate>Fri, 26 May 2023 10:20:08 GMT</pubDate>
+            <description><![CDATA[TUN/TAP是操作系统内核中的虚拟网络设备，可以完成用户空间与内核空间的数据的交互。网络协议栈中的数据通过该设备可以进入到用户空间中，而用户空间中的程序通过该设备空间进入到内核空间的网络协议栈。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/2023-04-13-2330-20230507110448-2vjzt36.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[理解Linux IPIP隧道]]></title>
+            <link>https://www.zhengwenfeng.com/pages/c128e7/</link>
+            <guid>https://www.zhengwenfeng.com/pages/c128e7/</guid>
+            <pubDate>Fri, 26 May 2023 13:11:26 GMT</pubDate>
+            <description><![CDATA[IPIP隧道的工作原理是将源主机的IP数据包封装在一个新的IP数据包中，新的IP数据包的目的地址是隧道的另一端。在隧道的另一端，接收方将解封装原始IP数据包，并将其传递到目标主机。IPIP隧道可以在不同的网络之间建立连接，例如在IPv4网络和IPv6网络之间建立连接。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/c__Users_User_OneDrive_workspace_excalidraw_ipip-20230526095538-83tl82w.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[理解VXLAN网络]]></title>
+            <link>https://www.zhengwenfeng.com/pages/8a4b28/</link>
+            <guid>https://www.zhengwenfeng.com/pages/8a4b28/</guid>
+            <pubDate>Fri, 26 May 2023 11:38:14 GMT</pubDate>
+            <description><![CDATA[在三层可达的网络中部署VXLAN，在每个VXLAN网络端点中都有一个VTEP设备，负责将VXLAN协议的数据包进行UDP数据包的封包和解包，可以将其理解为隧道，将VXLAN数据包从逻辑网络转发到物理网络]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20230526124522.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[使用hue创建ozzie的pyspark action workflow]]></title>
+            <link>https://www.zhengwenfeng.com/pages/aba491/</link>
+            <guid>https://www.zhengwenfeng.com/pages/aba491/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[介绍如何使用hue来创建ozzie来创建一个spark action的owrkflow]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220907215736.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[使用java开发logstash的filter插件]]></title>
+            <link>https://www.zhengwenfeng.com/pages/7f16f6/</link>
+            <guid>https://www.zhengwenfeng.com/pages/7f16f6/</guid>
+            <pubDate>Tue, 20 Dec 2022 15:37:33 GMT</pubDate>
+            <description><![CDATA[主要记录使用java开发logstash的filter插件的过程。]]></description>
+        </item>
+        <item>
+            <title><![CDATA[分布式锁]]></title>
+            <link>https://www.zhengwenfeng.com/pages/d91dfb/</link>
+            <guid>https://www.zhengwenfeng.com/pages/d91dfb/</guid>
+            <pubDate>Wed, 21 Sep 2022 10:09:01 GMT</pubDate>
+            <description><![CDATA[本文介绍了分布式锁遇到的问题及对应的解决方案]]></description>
+        </item>
+        <item>
+            <title><![CDATA[count的性能优化]]></title>
+            <link>https://www.zhengwenfeng.com/pages/19cfb6/</link>
+            <guid>https://www.zhengwenfeng.com/pages/19cfb6/</guid>
+            <pubDate>Wed, 10 Aug 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[遇到的sql查询语句中发现的count性能优化的问题]]></description>
+        </item>
+        <item>
+            <title><![CDATA[读书笔记:如何阅读一本书]]></title>
+            <link>https://www.zhengwenfeng.com/pages/8bdb8d/</link>
+            <guid>https://www.zhengwenfeng.com/pages/8bdb8d/</guid>
+            <pubDate>Fri, 21 Oct 2022 20:52:34 GMT</pubDate>
+            <description><![CDATA[本文是我阅读完《如何阅读一本书》的读后感，作者主要是将阅读分为了四个层次：基础阅读、检视阅读、分析阅读和主题阅读，并讲解这几个层次该如何去做，能够更好的帮助我们阅读，让我们从中收获到更多]]></description>
+        </item>
+        <item>
+            <title><![CDATA[初识 MCP Server]]></title>
+            <link>https://www.zhengwenfeng.com/pages/92e280/</link>
+            <guid>https://www.zhengwenfeng.com/pages/92e280/</guid>
+            <pubDate>Thu, 01 May 2025 16:05:29 GMT</pubDate>
+            <description><![CDATA[MCP 全称为 Model Context Protocol，是一个大模型智能体与外部工具或者数据源的交互协议。也就是说，智能体可以通过该协议去调用所以支持该协议的服务，来增强智能体的能力。在没有 MCP 时，不同的智能体都需要对不同的外部工具做单独的适配才能调用，也就是都用自己独有的协议，有 MCP 后也就是统一了外部调用协议，减轻了智能体的开发成本，也可以快速接入不同的外部服务。本文主要是简单认识下 MCP，并利用 MCP 来调用本地文件系统和数据库来完成案例。]]></description>
+            <enclosure url="https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17460888546831746088854424.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[关于]]></title>
+            <link>https://www.zhengwenfeng.com/about/</link>
+            <guid>https://www.zhengwenfeng.com/about/</guid>
+            <pubDate>Wed, 25 Dec 2019 14:27:01 GMT</pubDate>
+            <description><![CDATA[工作年限: 5年
+职业: 软件开发工程师
+目前: 在某厂搬砖中~]]></description>
+        </item>
+        <item>
+            <title><![CDATA[网站]]></title>
+            <link>https://www.zhengwenfeng.com/pages/beb6c0bd8a66cea6/</link>
+            <guid>https://www.zhengwenfeng.com/pages/beb6c0bd8a66cea6/</guid>
+            <pubDate>Sun, 19 Apr 2020 11:33:04 GMT</pubDate>
+            <description><![CDATA[k8s k8s中文官网
+vuepress-theme-vdoing 一款优秀的博客主题
+技术文章摘录
+代码片段 快速查看某一门技术的代码片段]]></description>
+        </item>
+        <item>
+            <title><![CDATA[友链]]></title>
+            <link>https://www.zhengwenfeng.com/friends/</link>
+            <guid>https://www.zhengwenfeng.com/friends/</guid>
+            <pubDate>Sun, 30 Oct 2022 20:28:03 GMT</pubDate>
+            <description><![CDATA[desc: 一个专注互联网技术分享的个人独立博客。
+  avatar: https://blog.wenfxl.com/images/logo.png
+  link: https://blog.wenfxl.com/
+:::]]></description>
+        </item>
+    </channel>
+</rss>

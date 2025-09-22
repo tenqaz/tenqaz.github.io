@@ -1,0 +1,782 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "郑文峰的博客",
+    "home_page_url": "https://www.zhengwenfeng.com",
+    "feed_url": "https://www.zhengwenfeng.com/feed.json",
+    "description": "技术博客，专注于后端学习与总结，python,go,redis,k8s,mysql,kafka,flask,django,tornado,git,github,markdown等技术类文章",
+    "items": [
+        {
+            "id": "https://www.zhengwenfeng.com/pages/f3cf17/",
+            "url": "https://www.zhengwenfeng.com/pages/f3cf17/",
+            "title": "容器的本质",
+            "summary": "容器实现的主要技术：namespace、cgroup、chroot, 通过代码实现一个容器来深入理解其本质。",
+            "date_modified": "2022-08-10T00:11:48.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d3768c/",
+            "url": "https://www.zhengwenfeng.com/pages/d3768c/",
+            "title": "手动实现docker容器bridge网络模型",
+            "summary": "本文主要是通过使用Network Namespace来模式docker的bridge模式来深入的理解其原理。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/16731830378711673183036984.png",
+            "date_modified": "2023-01-08T10:52:18.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/39f36e/",
+            "url": "https://www.zhengwenfeng.com/pages/39f36e/",
+            "title": "docker容器",
+            "summary": "简介docker及其使用方法",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220705193057.png",
+            "date_modified": "2022-08-10T00:11:29.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/2b547f/",
+            "url": "https://www.zhengwenfeng.com/pages/2b547f/",
+            "title": "k8s之Pod",
+            "summary": "介绍k8s中的pod资源对象，及其使用方法和案例",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220331113937.png#crop=0&crop=0&crop=1&crop=1&id=mo242&originHeight=381&originWidth=481&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
+            "date_modified": "2022-08-30T12:48:34.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d73c88/",
+            "url": "https://www.zhengwenfeng.com/pages/d73c88/",
+            "title": "k8s之Deployment",
+            "summary": "介绍k8s中的deployment资源对象，及其使用方法和案例",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220820143105.png",
+            "date_modified": "2022-08-29T16:27:11.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/0ddeb7/",
+            "url": "https://www.zhengwenfeng.com/pages/0ddeb7/",
+            "title": "docker容器单机网络",
+            "summary": "本文主要讲述docker容器的四种网络模式：host、bridge、container、null，并介绍它们的使用方法及实现原理。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/16731831018681673183100953.png",
+            "date_modified": "2023-01-08T10:52:41.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/1f860b/",
+            "url": "https://www.zhengwenfeng.com/pages/1f860b/",
+            "title": "k8s之Service",
+            "summary": "介绍k8s中的service资源对象，及其使用方法和案例",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220808185926.png",
+            "date_modified": "2022-08-30T16:59:37.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/ff8188/",
+            "url": "https://www.zhengwenfeng.com/pages/ff8188/",
+            "title": "k8s之ConfigMap和Secret",
+            "summary": "介绍k8s中的configmap和secret资源对象，及其使用方法和案例",
+            "date_modified": "2022-08-30T21:16:09.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/go_performance/",
+            "url": "https://www.zhengwenfeng.com/go_performance/",
+            "title": "Go语言高性能编程",
+            "date_modified": "2025-06-14T23:31:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/c96905/",
+            "url": "https://www.zhengwenfeng.com/pages/c96905/",
+            "title": "k8s之Job和CronJob",
+            "summary": "介绍k8s中的job资源对象，及其使用方法和案例",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220721102314.png",
+            "date_modified": "2022-08-31T10:34:54.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/bug_hunt/",
+            "url": "https://www.zhengwenfeng.com/bug_hunt/",
+            "title": "Bug 通缉令",
+            "date_modified": "2025-09-14T10:59:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/92bee4/",
+            "url": "https://www.zhengwenfeng.com/pages/92bee4/",
+            "title": "k8s之DaemonSet",
+            "summary": "介绍k8s中的daemonset资源对象，及其使用方法和案例",
+            "date_modified": "2022-08-31T11:06:48.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/095c75/",
+            "url": "https://www.zhengwenfeng.com/pages/095c75/",
+            "title": "k8s之PV、PVC和StorageClass",
+            "summary": "介绍k8s中的pv、pvc和storageclass资源对象，及其使用方法和案例",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220831163136.png",
+            "date_modified": "2022-08-31T15:03:37.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/9e17c8/",
+            "url": "https://www.zhengwenfeng.com/pages/9e17c8/",
+            "title": "使用kubeadm安装k8s",
+            "summary": "介绍如何使用kubeadm来搭建一个小型的k8s集群",
+            "date_modified": "2022-09-13T20:14:37.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d178a2/",
+            "url": "https://www.zhengwenfeng.com/pages/d178a2/",
+            "title": "k8s之StatefulSet",
+            "summary": "介绍k8s中的statefulset资源对象，及其使用方法和案例",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220831173844.png",
+            "date_modified": "2022-08-31T14:55:02.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/b1b4a3/",
+            "url": "https://www.zhengwenfeng.com/pages/b1b4a3/",
+            "title": "django后端服务、logstash和flink接入VictoriaMetrics指标监控",
+            "summary": "通过指标监控可以设置对应的告警，快速发现问题，并通过相应的指标定位问题。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20230221110733.png",
+            "date_modified": "2023-02-21T11:05:03.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/27987d/",
+            "url": "https://www.zhengwenfeng.com/pages/27987d/",
+            "title": "pod中将代码与运行环境分离",
+            "summary": "我们在创建一个 python 的 web 服务的镜像时，一般的做法是，将 python 环境与代码打包成一个镜像，然后将这个镜像进行发布。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20221114095752.png",
+            "date_modified": "2022-11-14T09:56:31.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/f0f725/",
+            "url": "https://www.zhengwenfeng.com/pages/f0f725/",
+            "title": "理解calico容器网络通信方案原理",
+            "summary": "Calico是k8s中常用的容器解决方案的插件，本文主要介绍BGP模式和IPIP模式是如何解决的，并详细了解其原理，并通过实验加深理解。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/c__Users_User_OneDrive_workspace_excalidraw_calico.png",
+            "date_modified": "2023-06-03T11:04:25.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d9d0ce/",
+            "url": "https://www.zhengwenfeng.com/pages/d9d0ce/",
+            "title": "理解flannel的三种容器网络方案原理",
+            "summary": "本文主要介绍flannel在k8s网络中作为网络插件通过UDP、VXLAN、HOST-GATEWAY三种模式来解决容器跨主机网络通信的，并通过手动实现这三种模式深入理解其原理。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20230603100424.png",
+            "date_modified": "2023-06-01T12:56:36.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/b3955c/",
+            "url": "https://www.zhengwenfeng.com/pages/b3955c/",
+            "title": "kubernetes service如何通过iptables转发",
+            "summary": "本文主要是介绍kubernetes的service是如何利用iptables来进行流量的转发达到流量的负载均衡的，并会通过实践操作来更好的理解与验证其原理。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/image-20240110142336-wl40wxw.png",
+            "date_modified": "2024-01-18T16:40:30.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/cf65ba/",
+            "url": "https://www.zhengwenfeng.com/pages/cf65ba/",
+            "title": "一次服务升级时pg表DDL执行超时失败",
+            "summary": "本文详细分析了一次因PostgreSQL表DDL执行超时失败而导致的服务升级问题，通过SQL查询和代码审查定位到问题根源，揭示了数据库锁机制和资源管理的重要性。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17578168418231757816840915.png",
+            "date_modified": "2025-09-14T10:07:39.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/6e0045/",
+            "url": "https://www.zhengwenfeng.com/pages/6e0045/",
+            "title": "kube-proxy源码分析",
+            "summary": "本文主要是对kube-proxy的源码分析，了解其代码结构和实现原理。这里是根据kubernetes1.23.9版本来进行分析的。在下面贴上的代码会一定裁剪，主要用于理解主流程。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/image-20240118162033-mma8vs8.png",
+            "date_modified": "2024-01-18T16:43:23.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/de98b1/",
+            "url": "https://www.zhengwenfeng.com/pages/de98b1/",
+            "title": "服务启动时出现 OOM",
+            "summary": "本文详细记录了一次在Kubernetes环境中Golang服务启动时出现OOM（Out of Memory）问题的排查和解决过程。服务在启动约2分钟后出现内存溢出，通过pprof工具分析发现主要问题源于bytes.Buffer对象的频繁扩容。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17585287225681758528722158.png",
+            "date_modified": "2025-09-22T15:39:13.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/fa114f/",
+            "url": "https://www.zhengwenfeng.com/pages/fa114f/",
+            "title": "kafka中listener和advertised.listeners的作用",
+            "summary": "如下配置：",
+            "date_modified": "2023-05-01T17:41:02.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/2d69c7/",
+            "url": "https://www.zhengwenfeng.com/pages/2d69c7/",
+            "title": "mysql之日志",
+            "summary": "一条数据在更新过程当中，如果中途 mysql crash 了，mysql 是如何保证数据的一致性和持久性的？在这个过程中 mysql 的日志系统起到了至关重要的作用。本文将会介绍 mysql 中的 undo log、redo log 和 bin log 在这其中的作用。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/16699026890611669902688907.png",
+            "date_modified": "2023-01-01T20:23:07.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/0d8f4a/",
+            "url": "https://www.zhengwenfeng.com/pages/0d8f4a/",
+            "title": "mysql之MVCC原理",
+            "summary": "MVCC 的全称是 Multi- Version Concurrency Control，也就是多版本并发控制，该机制是只有支持事务的 InnoDB 引擎下才存在的，用来实现提高数据库的并发性能，可以做到：读不加锁，读写不冲突。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210821150008.png",
+            "date_modified": "2023-01-01T20:23:21.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/2bbeb3/",
+            "url": "https://www.zhengwenfeng.com/pages/2bbeb3/",
+            "title": "redis之五种基本数据类型",
+            "summary": "本文主要讲解 redis 的五种基本数据类型：String、List、Set、Sorted Set、Hash。学习如何使用它们，并且了解它们的底层数据结构实现，这样我们才能在适当的应用场景选择最适合的数据类型来解决我们的需求。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210820163352.png",
+            "date_modified": "2022-12-01T15:16:14.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/4c6b13/",
+            "url": "https://www.zhengwenfeng.com/pages/4c6b13/",
+            "title": "redis之持久化",
+            "summary": "本文主要是介绍 redis 是如何进行持久化数据的，我们知道 redis 是基于内存的数据库，那么只要服务器一旦宕机，那么数据则将全部丢失，如果从后端数据库进行恢复，则可能导致性能变慢，那么 redis 需要自身持久化，而不通过后端数据库来恢复数据是重要的。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210805185829.png",
+            "date_modified": "2022-12-01T15:18:02.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/8072eb/",
+            "url": "https://www.zhengwenfeng.com/pages/8072eb/",
+            "title": "redis之主从库同步",
+            "summary": "在单点故障后，我们需要保证服务不间断，所以需要使用冗余的副本提供集群服务，从而达到服务的高可用。redis 提供了主从库数据同步机制，从而保证数据副本的一致性，而主从库使用的是读写分离的机制。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210806172905.png",
+            "date_modified": "2022-12-01T15:18:20.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/ffee9e/",
+            "url": "https://www.zhengwenfeng.com/pages/ffee9e/",
+            "title": "redis之哨兵机制",
+            "summary": "本文主要介绍的是 Redis 提供的哨兵机制，通过哨兵监控主库的状况，如果发现主库下线，则会从从库中选择一个状态优秀的当做主库，从而保证服务的高可用。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210807101732.png",
+            "date_modified": "2022-12-01T15:18:35.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/1c2914/",
+            "url": "https://www.zhengwenfeng.com/pages/1c2914/",
+            "title": "redis之分片集群",
+            "summary": "在海量的数据面前，单个 redis 实例的能力是有限的，无可能无限增大的内存，所以必须要构建分片集群，来横向拓展来支持保存更多的数据。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20210808133416.png",
+            "date_modified": "2022-12-01T15:18:45.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/0d7b25/",
+            "url": "https://www.zhengwenfeng.com/pages/0d7b25/",
+            "title": "redis之缓存",
+            "summary": "reids 是基于内存的数据库，它的特性之一就快，缓存是其最主要的应用场景，本文主要介绍 redis 的缓存特性，以及该如何正确的使用它。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/16698736280551669873627898.png",
+            "date_modified": "2022-12-01T15:18:55.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/e31b06/",
+            "url": "https://www.zhengwenfeng.com/pages/e31b06/",
+            "title": "python迭代器与生成器",
+            "summary": "本文介绍了python的迭代器与生成器的用法与原理",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604801659428.png#crop=0&crop=0&crop=1&crop=1&id=Wm3Ir&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/5fa368/",
+            "url": "https://www.zhengwenfeng.com/pages/5fa368/",
+            "title": "python元编程",
+            "summary": "本文介绍python中元编程的属性及使用方法",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/adedbd/",
+            "url": "https://www.zhengwenfeng.com/pages/adedbd/",
+            "title": "pulsar阻塞导致logstash无法接入日志",
+            "summary": "在使用tcp和udp接入方式接入一段时间日志之后，日志突然无法接入了，在pulsar中的对应topic没有新的日志生产进来了。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17302568788191730256878496.png",
+            "date_modified": "2024-10-30T10:34:05.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/a6b804/",
+            "url": "https://www.zhengwenfeng.com/pages/a6b804/",
+            "title": "python上下文管理器",
+            "summary": "python的上下文管理的使用及实现的几种方式",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/78c648/",
+            "url": "https://www.zhengwenfeng.com/pages/78c648/",
+            "title": "python垃圾回收机制",
+            "summary": "python的垃圾回收机制的几种方式：引用计数、标记清楚及分代回收，介绍他们的原理。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220907215650.png",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/33b8d0/",
+            "url": "https://www.zhengwenfeng.com/pages/33b8d0/",
+            "title": "使用python实现单例模式的三种方式",
+            "summary": "本文主要介绍使用python的三种实现单例模式的方式。",
+            "date_modified": "2022-12-10T16:47:40.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d8fd49/",
+            "url": "https://www.zhengwenfeng.com/pages/d8fd49/",
+            "title": "python中import原理",
+            "summary": "本文介绍python正在import module时做了什么，它又是如何加载module的。",
+            "date_modified": "2023-02-07T09:34:33.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/7434f1/",
+            "url": "https://www.zhengwenfeng.com/pages/7434f1/",
+            "title": "python装饰器的使用方法",
+            "summary": "介绍python中的装饰器的几种常见的使用方法并理解它们的实现原理。",
+            "date_modified": "2022-10-23T17:18:08.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/8d9ab9/",
+            "url": "https://www.zhengwenfeng.com/pages/8d9ab9/",
+            "title": "使用ddt实现unittest的参数化测试",
+            "summary": "本文介绍如何使用ddt库来完成unitest的参数化设置。",
+            "date_modified": "2022-10-12T14:48:10.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/ec5110/",
+            "url": "https://www.zhengwenfeng.com/pages/ec5110/",
+            "title": "django-apschedule定时任务异常停止",
+            "summary": "在django项目中使用django-apschedule来实现定时任务，使用的是BackgroundScheduler调度类，该调度的实现是通过后台线程的方式执行定时任务。其中任务都是持久化到数据库中的。在项目的运行过程中，因为数据库的异常，导致定时任务线程异常终止，即使数据库后续恢复正常，但也不再继续执行。我多次尝试复现未果，在开启定时任务期间，手动将数据库连接断开，定时任务执行失败，然后再将数据库建立连接，定时任务竟然重新恢复了，这让我一时摸不着头脑。",
+            "date_modified": "2023-10-30T16:53:28.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/069c65/",
+            "url": "https://www.zhengwenfeng.com/pages/069c65/",
+            "title": "ddt源码分析",
+            "summary": "ddt 是 python 的第三方库，主要是解决使用 unittest 来写单测时可以支持参数化的配置，本文介绍源码解析该库，理解它的实现过程。",
+            "date_modified": "2022-10-23T20:04:51.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/25eafd/",
+            "url": "https://www.zhengwenfeng.com/pages/25eafd/",
+            "title": "django rest_framework使用jwt",
+            "summary": "本文介绍在 django rest_framework 使用jwt认证.",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604218012751.jpg#alt=",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/626675/",
+            "url": "https://www.zhengwenfeng.com/pages/626675/",
+            "title": "django rest_framework Authentication",
+            "summary": "本文介绍的是 django rest_framework的认证方式.",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604217645776.png#alt=",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/070fec/",
+            "url": "https://www.zhengwenfeng.com/pages/070fec/",
+            "title": "django rest_framework异常处理",
+            "summary": "当程序中出现异常时，我们想要返回的是包含异常信息的json数据。返回正常的信息和异常信息的格式一致化。",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/853501/",
+            "url": "https://www.zhengwenfeng.com/pages/853501/",
+            "title": "django celery 结合使用",
+            "summary": "本文主要介绍django和celery结合使用的案例。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604217044049.png#alt=#crop=0&crop=0&crop=1&crop=1&id=kAMz1&originHeight=475&originWidth=564&originalType=binary&ratio=1&rotation=0&showTitle=false&status=done&style=none&title=",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/f2738b/",
+            "url": "https://www.zhengwenfeng.com/pages/f2738b/",
+            "title": "django压缩文件下载",
+            "summary": "介绍在django中，如何将数据生成zip文件提供给用户进行下载",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/c28126/",
+            "url": "https://www.zhengwenfeng.com/pages/c28126/",
+            "title": "django rest_framework使用pytest单元测试",
+            "summary": "介绍在django的rest_framework中如何使用pytest进行单元测试而不是自带的测试框架。",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/c3af6a/",
+            "url": "https://www.zhengwenfeng.com/pages/c3af6a/",
+            "title": "django rest_framework 自定义文档",
+            "summary": "django rest_framework 自动生成文档的功能，能够很好的给前端提供帮助，在文档中可以看到api的参数和其提供的功能信息，并且还能够在上面直接测试api接口。",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/b90015/",
+            "url": "https://www.zhengwenfeng.com/pages/b90015/",
+            "title": "django restframework choice 自定义输出数据",
+            "summary": "介绍如何在django restframework中使用choice来自定义输出数据。",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/cfdb5f/",
+            "url": "https://www.zhengwenfeng.com/pages/cfdb5f/",
+            "title": "django Filtering 使用",
+            "summary": "介绍django-filter是如何使用的。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604217188654.png#alt=",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/e75ceb/",
+            "url": "https://www.zhengwenfeng.com/pages/e75ceb/",
+            "title": "django viewset 和 Router 配合使用时报的错",
+            "summary": "解决django viewset和router配合使用时报的错误",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/acdd50/",
+            "url": "https://www.zhengwenfeng.com/pages/acdd50/",
+            "title": "django model的序列化",
+            "summary": "django model如何实现序列化。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604217291865.png#alt=",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/382755/",
+            "url": "https://www.zhengwenfeng.com/pages/382755/",
+            "title": "django中使用AbStractUser",
+            "summary": "介绍在django中如何使用AbStractUser",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/060c51/",
+            "url": "https://www.zhengwenfeng.com/pages/060c51/",
+            "title": "django.core.exceptions.ImproperlyConfigured Application labels aren't unique, duplicates users",
+            "summary": "使用pycharm professional 开发django时出现以下异常。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1604218742346.png#alt=",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/de01e2/",
+            "url": "https://www.zhengwenfeng.com/pages/de01e2/",
+            "title": "django 中 media配置",
+            "summary": "media文件夹一般用于上传媒体文件到服务中存放的地方。介绍在django中如何使用media的配置",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/b422bd/",
+            "url": "https://www.zhengwenfeng.com/pages/b422bd/",
+            "title": "django 外键引用自身和on_delete参数",
+            "summary": "django中使用外键引用自身的方法及on_delete参数的配置",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/f0d816/",
+            "url": "https://www.zhengwenfeng.com/pages/f0d816/",
+            "title": "django 警告 while time zone support is active",
+            "summary": "django中的时区问题",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/b71dc2/",
+            "url": "https://www.zhengwenfeng.com/pages/b71dc2/",
+            "title": "Flask使用flask_socketio实现websocket",
+            "summary": "在flask中使用flask_socketio来实现websocket的功能。",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/4b0adb/",
+            "url": "https://www.zhengwenfeng.com/pages/4b0adb/",
+            "title": "django-prometheus使用及源码分析",
+            "summary": "而本文主要是介绍使用django-prometheus来对django服务添加对prometheus指标的支持，它已经内置了部分的指标采集，包括请求、数据库和缓存等方面的指标。除了使用方法外，也会对其源码进行分析，看它是如何实现的。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/1726558982722image-20240917134902-uu4hpp3.png",
+            "date_modified": "2024-09-17T15:18:44.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/cb262f/",
+            "url": "https://www.zhengwenfeng.com/pages/cb262f/",
+            "title": "django rest_framework 分页",
+            "summary": "本文主要介绍在drf框架中如何对查询的数据进行分页，在drf框架中有提供该基础功能的使用案例和文档，详情参考drf-pagination-官网文档",
+            "date_modified": "2023-03-20T11:32:52.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/c59edf/",
+            "url": "https://www.zhengwenfeng.com/pages/c59edf/",
+            "title": "flask结合mongo",
+            "summary": "在flask中集成第三方库flask-mongoengine来通过ORM操作mongo数据库",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/4c38f5/",
+            "url": "https://www.zhengwenfeng.com/pages/4c38f5/",
+            "title": "tornado 文件上传",
+            "summary": "tornado实现的文件上传功能",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/c24905/",
+            "url": "https://www.zhengwenfeng.com/pages/c24905/",
+            "title": "tornado 使用jwt完成用户异步认证",
+            "summary": "tornado使用jwt实现用户的异步认证",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/22f35b/",
+            "url": "https://www.zhengwenfeng.com/pages/22f35b/",
+            "title": "tornado 用户密码 bcrypt加密",
+            "summary": "使用bcrypt来实现对用户密码进行加密",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/7ac01f/",
+            "url": "https://www.zhengwenfeng.com/pages/7ac01f/",
+            "title": "tornado 结合wtforms使用表单操作",
+            "summary": "tornado使用wtforms来对表单进行验证与操作。",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d18657/",
+            "url": "https://www.zhengwenfeng.com/pages/d18657/",
+            "title": "tornado finish和write区别",
+            "summary": "介绍tornado中finish和write的区别",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/f9d78c/",
+            "url": "https://www.zhengwenfeng.com/pages/f9d78c/",
+            "title": "python简单使用grpc",
+            "summary": "简单介绍Python如何使用grpc",
+            "date_modified": "2022-09-06T19:45:31.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/113ab1/",
+            "url": "https://www.zhengwenfeng.com/pages/113ab1/",
+            "title": "tornado 使用peewee-async 完成异步orm数据库操作",
+            "summary": "tornado中使用peewee-async来完成异步orm数据库操作",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/72664a/",
+            "url": "https://www.zhengwenfeng.com/pages/72664a/",
+            "title": "pyspark streaming简介 和 消费 kafka示例",
+            "summary": "简单介绍pyspark streaming以及消费kafka的示例",
+            "image": "https://img-blog.csdnimg.cn/20190416164155495.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIyOTE4MjQz,size_16,color_FFFFFF,t_70",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/7f6078/",
+            "url": "https://www.zhengwenfeng.com/pages/7f6078/",
+            "title": "基于pre-commit的Python代码规范落地实践",
+            "summary": "pre-commit 是一个开源工具，用于管理和执行 Git 钩子，确保代码库的一致性和质量。通过在提交代码前自动运行代码风格检查（Linting）和格式修正（Formatting），它有助于保持项目代码的统一标准。本文将通过一个 Python 项目的实例，展示如何配置 pre-commit 工作流。本文旨在介绍使用 pre-commit 对 Python 项目进行代码检查的方法，以提前发现并解决代码中的问题，提高代码的整体质量。",
+            "date_modified": "2025-05-12T12:46:45.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/c41003/",
+            "url": "https://www.zhengwenfeng.com/pages/c41003/",
+            "title": "gin中validator模块的源码分析",
+            "summary": "在gin中使用的是validator模块来对表单进行校验的，本文主要是对该模块的源码分析与学习",
+            "date_modified": "2022-09-11T16:23:04.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/87014e/",
+            "url": "https://www.zhengwenfeng.com/pages/87014e/",
+            "title": "go简单使用grpc",
+            "summary": "介绍go是如何使用grpc的",
+            "date_modified": "2022-09-07T20:10:13.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/cf9a4d/",
+            "url": "https://www.zhengwenfeng.com/pages/cf9a4d/",
+            "title": "优化gin表单的错误提示信息",
+            "summary": "如何优化gin框架中表单的错误提示信息",
+            "date_modified": "2022-09-11T16:53:33.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d93df5/",
+            "url": "https://www.zhengwenfeng.com/pages/d93df5/",
+            "title": "go中如何处理error",
+            "summary": "在 go 中有 panic 的机制，但 panic 意味着程序终止，代码不能继续运行了，不能期望调用者来解决它。而 error 是预期中的异常，希望调用者可以对其进行处理的。",
+            "date_modified": "2022-11-14T10:11:11.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/36b0b2/",
+            "url": "https://www.zhengwenfeng.com/pages/36b0b2/",
+            "title": "tcp缓存引起的日志丢失",
+            "summary": "logstash从数据源拉取日志，然后通过tcp插件发送到proxy进程中。在业务侧发现日志量明显少了，所以有了这一次的问题排查。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20231109171607.png",
+            "date_modified": "2023-11-09T15:49:47.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d2c214/",
+            "url": "https://www.zhengwenfeng.com/pages/d2c214/",
+            "title": "Go协程池深度解析：原理、实现与最佳实践",
+            "summary": "深入解析Go协程池的工作原理、实现方式及性能优化策略，包含基准测试对比和实际应用场景分析",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17494714259921749471425027.png",
+            "date_modified": "2025-06-09T20:07:50.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/91d2d9/",
+            "url": "https://www.zhengwenfeng.com/pages/91d2d9/",
+            "title": "使用etcd分布式锁导致的协程泄露与死锁问题",
+            "summary": "本文记录自己在工作中排查etcd应用分布式锁而导致的泄露与死锁问题，并通过分析源码找到根因，最终解决。",
+            "date_modified": "2025-05-13T16:18:01.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/88360d/",
+            "url": "https://www.zhengwenfeng.com/pages/88360d/",
+            "title": "Go语言遍历性能深度解析：从原理到优化实践",
+            "summary": "在Go语言中，遍历是日常开发中最常见的操作之一。不同的遍历方式会对性能产生显著影响。本文将深入分析Go语言中遍历的性能特点，并探讨如何优化遍历以提高代码效率。",
+            "date_modified": "2025-06-14T10:43:04.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/49057b/",
+            "url": "https://www.zhengwenfeng.com/pages/49057b/",
+            "title": "Go语言Interface Boxing原理与性能优化指南",
+            "summary": "深入解析Go语言接口装箱(Boxing)机制，包含性能影响分析、基准测试对比及最佳实践建议",
+            "date_modified": "2025-06-14T09:34:09.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/4f7497/",
+            "url": "https://www.zhengwenfeng.com/pages/4f7497/",
+            "title": "Go语言零拷贝技术完全指南",
+            "summary": "深入解析Go语言中零拷贝技术的实现原理、性能优势及最佳实践，包含详细基准测试数据和实际应用场景分析",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17498741316891749874131178.png",
+            "date_modified": "2025-06-14T11:42:51.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/b03207/",
+            "url": "https://www.zhengwenfeng.com/pages/b03207/",
+            "title": "Go语言不可变数据共享：无锁并发编程实践",
+            "summary": "深入解析Go语言中不可变数据共享模式的实现原理、性能优势及最佳实践",
+            "date_modified": "2025-06-14T14:06:39.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d7dbc7/",
+            "url": "https://www.zhengwenfeng.com/pages/d7dbc7/",
+            "title": "Go语言内存预分配完全指南",
+            "summary": "深入解析Go语言中Slice和Map的内存预分配技术，包含性能对比测试和实际应用场景分析",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17584416417421758441641274.png",
+            "date_modified": "2025-06-14T14:51:20.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/821b25/",
+            "url": "https://www.zhengwenfeng.com/pages/821b25/",
+            "title": "Go语言原子操作完全指南",
+            "summary": "深入解析Go语言原子操作的实现原理、性能优势及最佳实践，包含详细基准测试数据和实际应用场景分析",
+            "date_modified": "2025-06-14T15:02:33.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/c19d45/",
+            "url": "https://www.zhengwenfeng.com/pages/c19d45/",
+            "title": "Go语言堆栈分配与逃逸分析深度解析",
+            "summary": "深入解析Go语言堆栈分配机制与逃逸分析原理，包含性能对比测试和实际优化建议",
+            "date_modified": "2025-06-14T17:30:57.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/df4833/",
+            "url": "https://www.zhengwenfeng.com/pages/df4833/",
+            "title": "Go语言空结构体：零内存消耗的高效编程",
+            "summary": "深入解析Go语言空结构体的特性及其在高性能场景下的应用实践",
+            "date_modified": "2025-06-14T19:41:46.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d4c8eb/",
+            "url": "https://www.zhengwenfeng.com/pages/d4c8eb/",
+            "title": "Go语言字符串拼接性能对比与优化指南",
+            "summary": "本文详细对比了Go语言中6种字符串拼接方式的性能差异，通过基准测试数据揭示最佳实践，并提供实际开发中的优化建议。",
+            "date_modified": "2025-06-14T20:18:52.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/f9a2a3/",
+            "url": "https://www.zhengwenfeng.com/pages/f9a2a3/",
+            "title": "Go语言延迟初始化(Lazy Initialization)最佳实践",
+            "summary": "入解析Go语言中延迟初始化的实现原理和最佳实践，包括sync.Once、sync.OnceValue和sync.OnceValues的使用场景和性能优势",
+            "date_modified": "2025-06-14T20:32:05.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/13969e/",
+            "url": "https://www.zhengwenfeng.com/pages/13969e/",
+            "title": "Go语言结构体内存对齐完全指南",
+            "summary": "深入解析Go语言结构体内存对齐原理与优化实践，包含性能测试数据和实用工具推荐",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17499021159591749902115421.png",
+            "date_modified": "2025-06-14T19:54:38.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d8ed61/",
+            "url": "https://www.zhengwenfeng.com/pages/d8ed61/",
+            "title": "Go语言高效IO缓冲技术详解",
+            "summary": "深入解析Go语言中缓冲I/O的工作原理、性能优势及最佳实践，包含基准测试数据对比和实际应用场景分析",
+            "date_modified": "2025-06-14T22:47:01.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/72ba9a/",
+            "url": "https://www.zhengwenfeng.com/pages/72ba9a/",
+            "title": "快速了解iptables",
+            "summary": "iptables是一个在Linux操作系统上使用的防火墙工具，它可以用于配置和管理网络数据包的过滤、转发和修改等操作。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/2023-04-13-2330-20230514151755-we6q131.png",
+            "date_modified": "2023-05-15T19:19:11.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/143447/",
+            "url": "https://www.zhengwenfeng.com/pages/143447/",
+            "title": "理解Linux TunTap设备",
+            "summary": "TUN/TAP是操作系统内核中的虚拟网络设备，可以完成用户空间与内核空间的数据的交互。网络协议栈中的数据通过该设备可以进入到用户空间中，而用户空间中的程序通过该设备空间进入到内核空间的网络协议栈。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/2023-04-13-2330-20230507110448-2vjzt36.png",
+            "date_modified": "2023-05-26T10:20:08.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/c128e7/",
+            "url": "https://www.zhengwenfeng.com/pages/c128e7/",
+            "title": "理解Linux IPIP隧道",
+            "summary": "IPIP隧道的工作原理是将源主机的IP数据包封装在一个新的IP数据包中，新的IP数据包的目的地址是隧道的另一端。在隧道的另一端，接收方将解封装原始IP数据包，并将其传递到目标主机。IPIP隧道可以在不同的网络之间建立连接，例如在IPv4网络和IPv6网络之间建立连接。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/c__Users_User_OneDrive_workspace_excalidraw_ipip-20230526095538-83tl82w.png",
+            "date_modified": "2023-05-26T13:11:26.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/8a4b28/",
+            "url": "https://www.zhengwenfeng.com/pages/8a4b28/",
+            "title": "理解VXLAN网络",
+            "summary": "在三层可达的网络中部署VXLAN，在每个VXLAN网络端点中都有一个VTEP设备，负责将VXLAN协议的数据包进行UDP数据包的封包和解包，可以将其理解为隧道，将VXLAN数据包从逻辑网络转发到物理网络",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20230526124522.png",
+            "date_modified": "2023-05-26T11:38:14.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/aba491/",
+            "url": "https://www.zhengwenfeng.com/pages/aba491/",
+            "title": "使用hue创建ozzie的pyspark action workflow",
+            "summary": "介绍如何使用hue来创建ozzie来创建一个spark action的owrkflow",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/20220907215736.png",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/7f16f6/",
+            "url": "https://www.zhengwenfeng.com/pages/7f16f6/",
+            "title": "使用java开发logstash的filter插件",
+            "summary": "主要记录使用java开发logstash的filter插件的过程。",
+            "date_modified": "2022-12-20T15:37:33.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/d91dfb/",
+            "url": "https://www.zhengwenfeng.com/pages/d91dfb/",
+            "title": "分布式锁",
+            "summary": "本文介绍了分布式锁遇到的问题及对应的解决方案",
+            "date_modified": "2022-09-21T10:09:01.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/19cfb6/",
+            "url": "https://www.zhengwenfeng.com/pages/19cfb6/",
+            "title": "count的性能优化",
+            "summary": "遇到的sql查询语句中发现的count性能优化的问题",
+            "date_modified": "2022-08-10T00:00:00.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/8bdb8d/",
+            "url": "https://www.zhengwenfeng.com/pages/8bdb8d/",
+            "title": "读书笔记:如何阅读一本书",
+            "summary": "本文是我阅读完《如何阅读一本书》的读后感，作者主要是将阅读分为了四个层次：基础阅读、检视阅读、分析阅读和主题阅读，并讲解这几个层次该如何去做，能够更好的帮助我们阅读，让我们从中收获到更多",
+            "date_modified": "2022-10-21T20:52:34.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/92e280/",
+            "url": "https://www.zhengwenfeng.com/pages/92e280/",
+            "title": "初识 MCP Server",
+            "summary": "MCP 全称为 Model Context Protocol，是一个大模型智能体与外部工具或者数据源的交互协议。也就是说，智能体可以通过该协议去调用所以支持该协议的服务，来增强智能体的能力。在没有 MCP 时，不同的智能体都需要对不同的外部工具做单独的适配才能调用，也就是都用自己独有的协议，有 MCP 后也就是统一了外部调用协议，减轻了智能体的开发成本，也可以快速接入不同的外部服务。本文主要是简单认识下 MCP，并利用 MCP 来调用本地文件系统和数据库来完成案例。",
+            "image": "https://gcore.jsdelivr.net/gh/tenqaz/BLOG-CDN@main/17460888546831746088854424.png",
+            "date_modified": "2025-05-01T16:05:29.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/about/",
+            "url": "https://www.zhengwenfeng.com/about/",
+            "title": "关于",
+            "summary": "工作年限: 5年\n职业: 软件开发工程师\n目前: 在某厂搬砖中~",
+            "date_modified": "2019-12-25T14:27:01.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/pages/beb6c0bd8a66cea6/",
+            "url": "https://www.zhengwenfeng.com/pages/beb6c0bd8a66cea6/",
+            "title": "网站",
+            "summary": "k8s k8s中文官网\nvuepress-theme-vdoing 一款优秀的博客主题\n技术文章摘录\n代码片段 快速查看某一门技术的代码片段",
+            "date_modified": "2020-04-19T11:33:04.000Z"
+        },
+        {
+            "id": "https://www.zhengwenfeng.com/friends/",
+            "url": "https://www.zhengwenfeng.com/friends/",
+            "title": "友链",
+            "summary": "desc: 一个专注互联网技术分享的个人独立博客。\n  avatar: https://blog.wenfxl.com/images/logo.png\n  link: https://blog.wenfxl.com/\n:::",
+            "date_modified": "2022-10-30T20:28:03.000Z"
+        }
+    ]
+}
